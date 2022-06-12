@@ -10,9 +10,13 @@ app = Flask(__name__)
 def index():
     return render_template("layouts/index.html")
 
-@app.route('/placeholder/')
-def placeholder():
-    return render_template("placeholder.html")
+@app.route('/ourstatement/')
+def ourstatement():
+    return render_template("ourstatement.html")
+
+# @app.route('/getinvolved/')
+# def getinvolved():
+#     return render_template("getinvolved.html")
 
 @app.errorhandler(404)
 def error(e):

@@ -1,7 +1,11 @@
-{% extends "layouts/base.html" %}
-{% block title %}Page Not Found{% endblock %}
-{% block body %}
+{#{% block title %}#}
+{#    404:Page Not Found#}
+{#{% endblock %}#}
+
+<center>
+    <body>
     <h1>That's odd. Looks like the page doesn't exist anymore!</h1>
-    <img src="/static/assets/GOAT.jpg" width="500rem" height="500rem" class="center" alt="">
-    <h5><a href="{{ url_for('index') }}">Click Here</a> to go to the Home Page</h5>
-{% endblock %}
+    <img src="/static/assets/GOAT.jpg" width="500rem" height="500rem">
+    <h5><a href="{{ url_for('index') }}">Click Here</a> to return Home</h5>
+    </body>
+</center>
