@@ -10,13 +10,13 @@ app = Flask(__name__)
 def index():
     return render_template("layouts/index.html")
 
-@app.route('/ourstatement/')
-def ourstatement():
-    return render_template("ourstatement.html")
+@app.route('/aboutkoinonia/')
+def aboutkoinonia():
+    return render_template("aboutus/aboutkoinonia.html")
 
-# @app.route('/getinvolved/')
-# def getinvolved():
-#     return render_template("getinvolved.html")
+@app.route('/getinvolved/')
+def getinvolved():
+    return render_template("getinvolved.html")
 
 @app.errorhandler(404)
 def error(e):

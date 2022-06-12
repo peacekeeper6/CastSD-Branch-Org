@@ -22,9 +22,9 @@
         <div class="navbar-nav">
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
 {#            <a class="nav-link" href={{ url_for('index') }}></a>#}
-            <a class="nav-link" href="/ourstatement/">Our Statement</a>
+            <a class="nav-link" href="{{ url_for('aboutkoinonia') }}">About Koinonia</a>
             <!-- stub is shown using the name of the route -->
-            <a class="nav-link" href="/getinvolved/">Get Involved</a>
+            <a class="nav-link" href="{{ url_for('getinvolved') }}">Get Involved</a>
         </div>
     </div>
         <form class="form-inline">
