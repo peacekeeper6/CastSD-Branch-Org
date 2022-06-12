@@ -46,21 +46,11 @@
     color: #111;
     }
 
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    }
-    }
-    .header {
+    {#/* Turn off parallax scrolling for tablets and phones */#}
+    {#@media only screen and (max-device-width: 1024px) {#}
+    {#.bgimg-1, .bgimg-2, .bgimg-3 {#}
+    {#background-attachment: scroll;#}
 
-        background-color: #f1f1f1;
-
-        padding: 20px;
-
-        text-align: center;
-
-    }
     h1 {
         display: inline-block;
         padding-top: 450px;
@@ -125,7 +115,7 @@
         </h1>
         <div>
             <center>
-                <button type="button" class="btn btn-outline-primary" onclick="document.location={{url_for('ourstatement')}}">Our Statement</button>
+                <button type="button" class="btn btn-outline-primary" onclick="document.location={{url_for('aboutkoinonia')}}">About Koinonia</button>
                 <button type="button" class="btn btn-outline-primary" onclick="document.location='GetInvolved'">Get Involved</button>
             </center>
         </div>
