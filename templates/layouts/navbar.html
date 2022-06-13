@@ -40,7 +40,15 @@
             <a class="nav-link" href="{{ url_for('getinvolved') }}">Get Involved</a>
         </div>
     </div>
-        <div id="google_translate_element"></div>
+        <div class="btn btn-outline-primary" role="button" onclick="DarkToggle()" style="padding-right:10px; cursor: pointer">Toggle Dark Mode</div>
+
+        <script>
+            function DarkToggle() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+        <div style="padding-right:10px; padding-left:10px" id="google_translate_element"></div>
         <script type="text/javascript">
             function googleTranslateElementInit() {
                 new google.translate.TranslateElement(
