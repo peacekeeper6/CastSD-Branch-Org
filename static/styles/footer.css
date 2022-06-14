@@ -80,6 +80,7 @@ h7 {
     padding:50px 0;
     color:#282d32;
     background-color:#ffffff;
+    border-top: 1px solid #000000;
 }
 
 .footer-white h3 {
