@@ -42,6 +42,9 @@ h7 {
     animation: koinonia 3s linear 0s;
 }
 
+h10 {
+    color: gray;
+}
 @keyframes koinonia {
     from {
         width: 200px;
