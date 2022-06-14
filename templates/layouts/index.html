@@ -3,8 +3,7 @@
 <meta charset="utf-8">
 {#<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">#}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
-    <title>Koinonia</title>
+    <title>Project ELIMIN8</title>
     <style>
         .bgimg-1 {
             background-image: url({{ url_for('static', filename='assets/capison.jpg') }});
@@ -13,14 +12,16 @@
 
         .bgimg-2 {
             background-image: url({{ url_for('static', filename='assets/doyouhavegamesonyourphone.jpg') }});
-            min-height: 700px;
+            max-height: 700px;
         }
 
         .bgimg-3 {
             background-image: url({{ url_for('static', filename='assets/chin.jpg') }});
             min-height: 400px;
         }
-
+        body {
+            color: #000000;
+        }
     </style>
 {% endblock %}
 
@@ -31,24 +32,25 @@
         <div class="flex-parent hero-desktop">
             <div class="flex-child _40 hero-padding">
                 <div class="child-div">
-                    <h1 style="color:black;padding-left:300px;font-size:95px">
-                        Project Koinonia
-                    </h1>
+                    <h7 style="color:black;padding-left:300px;font-size:95px">
+                        Project ELIMIN8
+                    </h7>
+                </div>
             </div>
-            </div>
+            <button type="button" class="btn btn-outline-primary" onclick="document.location='login'">Login</button>
         </div>
         <h1 style="visibility:hidden;padding-left:300px;font-size:100px">
             Placeholder Element
         </h1>
         <div>
             <center>
-                <button type="button" class="btn btn-outline-primary" onclick="document.location={{url_for('aboutkoinonia')}}">About Koinonia</button>
-                <button type="button" class="btn btn-outline-primary" onclick="document.location='GetInvolved'">Get Involved</button>
+                <button type="button" class="btn btn-outline-primary" onclick="document.location='aboutelimin8'">About Project ELIMIN8</button>
+                <button type="button" class="btn btn-outline-primary" onclick="document.location='getinvolved'">Get Involved</button>
             </center>
         </div>
         </div>
-    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-        <p>Since its conception, Koinonia has been dedicated to preservation and giving back to the community.</p>
+    <div style="color: white;background-color:#262424;text-align:center;padding:50px 80px;text-align: justify;">
+        <p>Since its conception, Project ELIMIN8 has been dedicated to preservation and giving back to the community.</p>
     </div>
     <div class="bgimg-2">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -60,16 +62,16 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block" height="700px" src="/static/assets/pant.jpg" alt="First slide">
+                    <img class="d-block" height="700px" width="100%" src="/static/assets/pant.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" height="700px" src="/static/assets/kiss.jpg" alt="Second slide">
+                    <img class="d-block" height="700px" width="100%" src="/static/assets/kiss.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" height="700px" src="/static/assets/fivehead.jpg" alt="Third slide">
+                    <img class="d-block" height="700px" width="100%" src="/static/assets/fivehead.jpg" alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block" height="700px" src="/static/assets/sniff.jpg" alt="Fourth slide">
+                    <img class="d-block" height="700px" width="100%" src="/static/assets/sniff.jpg" alt="Fourth slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="background-color: rgba(0, 0, 0, 0.50)">
@@ -83,50 +85,19 @@
         </div>
     </div>
     <div style="position:relative;">
-        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <div style="color: white;background-color:#262424;text-align:center;padding:50px 80px;text-align: justify;">
             <p>We are based in San Diego, California. Feel free to contact us!</p>
         </div>
         </div>
     <div class="bgimg-3">
     </div>
     <div style="position:relative;">
-    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <div style="color: white;background-color:#262424;text-align:center;padding:50px 80px;text-align: justify;">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
     </div>
     </div>
-    </body>
 <div class="bgimg-1"></div>
-    <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">About Koinonia</a></li>
-                            <li><a href="#">Get Involved</a></li>
-                            <li><a href="#">Partners</a></li>
-                            <li><a href="#">Founders</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Contact</h3>
-                        <ul>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Register</a></li>
-                            <li><a href="#">Contact Information</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Project Koinonia</h3>
-                        <p>Koinonia has and always will be for the people. Feel free to contact us for anything!</p>
-                    </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
-                </div>
-                <p class="copyright">Koinonia</p>
-            </div>
-        </footer>
-    </div>
+
 {#        <hr>#}
 {#        <footer class="bg-white">#}
 {#            <div class="container py-5">#}
@@ -189,4 +160,5 @@
 {#        </div>#}
 {#    </div>#}
 {#    </footer>#}
+    </body>
 {% endblock %}
