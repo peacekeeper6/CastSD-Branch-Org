@@ -1,0 +1,85 @@
+{% extends "layouts/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <title>Project ELIMIN8|Login</title>
+    <style>
+        hr {
+            width: 25%;
+        }
+        .left {
+            float:left;
+        }
+
+        .right {
+            float:right;
+        }
+        .divider {
+            width:500px;
+            text-align:center;
+        }
+
+        .divider hr {
+            margin-left:auto;
+            margin-right:auto;
+            width:40%;
+
+        }
+        container {
+            justify-content: center;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+            height: 100vh;
+            {#justify-content: center;#}
+            {#align-items: center;#}
+        }
+        container {
+            justify-content: center;
+            width: 70%;
+            height: 85%;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0px 25px 40px #1687d933;
+        }
+    </style>
+</head>
+{% endblock %}
+{% block body %}
+<body>
+<container>
+<div class="form-group" style="width:200px;padding-left:25px">
+    <label for="inputEmail">Email</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+</div>
+</div>
+<div class="form-group" style="width:200px;padding-left:25px">
+    <label for="inputPassword">Password</label>
+    <input type="password" class="form-control" minlength="8" required id="inputPassword" placeholder="Password">
+</div>
+    <div style="padding-left:25px">
+<button type="submit" class="btn btn-outline-primary">Login</button>
+    </div>
+<center>
+    <div class="divider">
+    <hr class="left"/>
+    New User?
+    <hr class="right"/>
+    <p> <br>
+        <a href="{{ url_for('register') }}">Register</a></p> <br>
+</div>
+</center>
+</container>
+{#<center>#}
+{#    New User?#}
+{#    <hr style="width:15%"/>#}
+{#    <p> <br>#}
+{#        <a href="{{ url_for('register') }}">Register</a></p> <br>#}
+{#</center>#}
+</body>
+{% endblock %}
+</html>
