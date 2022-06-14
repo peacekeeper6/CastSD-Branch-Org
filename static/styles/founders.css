@@ -55,7 +55,7 @@ container {
     align-items: center;
     align-content: center;
 }
-container1 {
+fieldset {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
