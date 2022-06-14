@@ -2,12 +2,17 @@ button{
     position:relative;
 }
 body, html {
+
     height: 100%;
     margin: 0;
     font: 400 15px/1.8 "Lato", sans-serif;
     color: #777;
 }
-
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
     opacity: 0.65;
@@ -29,12 +34,12 @@ body, html {
 /*{#.bgimg-1, .bgimg-2, .bgimg-3 {#}*/
 /*{#background-attachment: scroll;#}*/
 
-h1 {
+h7 {
     display: inline-block;
     padding-top: 450px;
     overflow: hidden;
     white-space: nowrap;
-    animation: koinonia 4s linear 0s;
+    animation: koinonia 3s linear 0s;
 }
 
 @keyframes koinonia {
@@ -64,13 +69,13 @@ h1 {
 .item img {
     visibility: hidden;
 }
-hr {
-    height:2px;
-    border-width:0;
-    color:gray;
-    background-color:gray;
-    width: 75%
-}
+/*hr {*/
+/*    height:2px;*/
+/*    border-width:0;*/
+/*    color:gray;*/
+/*    background-color:gray;*/
+/*    width: 75%*/
+/*}*/
 .footer-dark {
     padding:50px 0;
     color:#f0f9ff;
