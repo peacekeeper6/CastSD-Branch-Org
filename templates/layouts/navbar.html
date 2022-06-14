@@ -1,4 +1,3 @@
-{# implement google translate #}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
     .sticky {
@@ -7,46 +6,71 @@
         z-index:999;
         top: 0;
     }
+    nav-link {
+        color: #000000;
+    }
+    {#light {#}
+    {#    background-color: #FFFFFF;#}
+    {#    color: #000000;#}
+    {#dark {#}
+    {#    background-color: #000000;#}
+    {#    color: #FFFFFF;#}
 </style>
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
     <div class="container-fluid">
     <a class="navbar-brand" href="{{url_for('index')}}">
-        <img src="/static/assets/GOAT.jpg" width="50rem" height="50rem" class="center" alt="">
-        Koinonia
+        <img src="/static/assets/SLUMPED.png" width="100rem" height="50rem" class="center" alt="">
     </a>
-    <a class="navbar-brand" href="https://csp.nighthawkcodingsociety.com/">{{basename}}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    {#<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
+    </button>#}
+
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     About
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="">About Koinonia</a>
-                    <a class="dropdown-item" href="">Partners</a>
-                    <a class="dropdown-item" href="">Founders</a>
-                    <a class="dropdown-item" href="">Lucas</a>
-                    <a class="dropdown-item" href="">Ŕithwikh</a>
+                    <a class="dropdown-item" href="{{ url_for('aboutelimin8') }}">About Project ELIMIN8</a>
+                    <a class="dropdown-item" href="{{ url_for('partners') }}">Partners</a>
+                    <a class="dropdown-item" href={{ url_for('founders') }}>Founders</a>
                 </div>
             </li>
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
 {#            <a class="nav-link" href={{ url_for('index') }}></a>#}
-            <a class="nav-link" href="{{ url_for('aboutkoinonia') }}">About Koinonia</a>
-            <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
             <!-- stub is shown using the name of the route -->
             <a class="nav-link" href="{{ url_for('getinvolved') }}">Get Involved</a>
+            <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
         </div>
     </div>
-        <div class="btn btn-outline-primary" role="button" onclick="DarkToggle()" style="padding-right:10px; cursor: pointer">Toggle Dark Mode</div>
-
+        <input value="Toggle Mode" type="submit" onclick="darkToggle()" name="DarkToggle" class="btn btn-outline-primary" id="DarkToggle">
+{#        <label class="custom-control-label" for="DarkToggle">Dark Mode</label>#}
+{#        <div class="btn btn-outline-primary" role="button" onclick="DarkToggle()" style="padding-right:10px; cursor: pointer">Toggle Dark Mode</div>#}
         <script>
-            function DarkToggle() {
-                var element = document.body;
-                element.classList.toggle("dark-mode");
-            }
+            {#let darkmode = document.body.getElementsByTagName("*");#}
+            {#let darkmode = document.querySelector( 'body *' );#}
+            {#let darkmode = document.querySelector('body');#}
+            {#let lightmode = document.querySelector('body')#}
+            {#let darkmode = document.body;#}
+            {#document.getElementById('DarkToggle').onclick = function DarkToggle() {#}
+            {#    darkmode.classList.toggle("dark");#}
+            {#function myFunction() {#}
+            {#    let element = document.body;#}
+            {#    element.classList.toggle("dark-mode");#}
+                {#darkmode.style.cssText = 'background-color:#393433; color: #FFFFFFF;'#}
+            {#function myFunction() {#}
+            {#    var element = document.body;#}
+            {#    element.classList.toggle("dark-mode");#}
+
+            {#document.getElementById('LightToggle').onclick = function LightToggle() {#}
+            {#    lightmode.style.cssText = 'background-color:#FFFFFF; color:#000000;'#}
+            {#let lightmode = document.querySelector('body');#}
+            {#let darkmode = document.querySelector('body');#}
+            {#function DarkToggle(){#}
+            {#    darkmode.style.cssText = 'background-color: #000000; color: #FFFFFF;'#}
         </script>
         <div style="padding-right:10px; padding-left:10px" id="google_translate_element"></div>
         <script type="text/javascript">
@@ -65,5 +89,10 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
         </form>
+        <div class="navbar-right">
+            <div class="navbar-nav">
+                <a class="nav-link" style="padding-left: 5px" href="{{ url_for('login') }}"><b>Login</b></a>
 </div>
+        </div>
 </nav>
+
