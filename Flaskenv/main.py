@@ -35,17 +35,17 @@ def partners():
     return render_template("aboutus/partners.html")
 
 
-@app.route('/getinvolved')
+@app.route('/getinvolved/')
 def getinvolved():
     return render_template("getinvolved.html")
 
 
-@app.route('/contact')
+@app.route('/contact/')
 def contact():
     return render_template("contact.html")
 
 
-@app.route('/login')
+@app.route('/login/')
 def login():
     return render_template("login.html")
 
