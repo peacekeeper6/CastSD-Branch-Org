@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\juney\\IdeaProjects\\CastSD-Branch-Org\\Flaskenv\\env\\bin\\python"
+    "python.pythonPath": "C:\\Users\\juney\\IdeaProjects\\CastSD-Branch-Org\\Flaskenv\\env\\bin\\python",
+    "github.gitAuthentication": true
 }
