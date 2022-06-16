@@ -1,16 +1,18 @@
-import markdown
+# import markdown
+from flask import Flask
 from flask import render_template
-from __init__ import app
-from flask_login import current_user
-from usercrud.query import user_by_id
+# from __init__ import app
+# from flask_login import current_user
+# from usercrud.query import user_by_id
 
-from usercrud.app_crud import app_crud
+# from usercrud.app_crud import app_crud
 
-app.register_blueprint(app_crud)
+# app.register_blueprint(app_crud)
 
 # create a Flask instance
-# app = Flask(__name__)
+app = Flask(__name__)
 
+# this is a test i am not used to vs code
 
 # connects default URL to render index.html
 @app.route('/')
