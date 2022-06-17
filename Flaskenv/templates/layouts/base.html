@@ -9,19 +9,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/assets/scss">
-    <link rel="icon" href="/static/assets/elimin8!.jpg">
+    <link rel="icon" href="/static/assets/image_6483441.JPG">
     <title>| Project ELIMIN8 |</title>
-    <link rel="shortcut icon" href="/static/assets/elimin8!.jpg">
+    <link rel="shortcut icon" href="/static/assets/image_6483441.JPG">
 
 
     {%block head %}
 <style>
-body {
-    color: #000000;
-    background-image: url({{ url_for('static', filename='assets/white-unsplash-9d0375d2.jpg') }});
+    /* color: #000000;
+    background-image: url({{ url_for('static', filename='assets/background.jpg') }});
     background-repeat: no-repeat;
-    background-size:100% 100%;
-}
+    background-size:100% 100%; */
+    body {
+            background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            height: 100vh;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
 </style>
     {%endblock%}
 </head>
