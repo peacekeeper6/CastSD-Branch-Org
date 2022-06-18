@@ -6,15 +6,31 @@
     <meta charset="UTF-8">
     <title>Project ELIMIN8|Register</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/register.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
     <style>
-        {#container {#}
-        {#    margin: 0;#}
-        {#    padding: 5px;#}
-        {#    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);#}
-        {#    height: 100vh;#}
-        {#    justify-content: center;#}
-        {#    align-items: center;#}
-
+        h1 {
+            display:flex;
+            justify-content: center;
+            color: #000000;
+            margin-top:2rem;
+            margin-bottom:5rem;
+        } 
+        h2 {
+            margin-bottom:2rem
+        }
+        container {
+            /* align-items: center;
+            align-content: center;
+            justify-content: center; */
+            padding-top:5rem;
+            margin: auto;
+            width: 60rem;
+            height: 100rem;
+            background-color: #ffffff; 
+            border-radius: 15px;
+            /* border-radius: 20px; */
+            box-shadow: 0px 25px 40px #1687d933;
+        } */
         {#form {#}
         {#    width: 70%;#}
         {#    height: 85%;#}
@@ -27,10 +43,6 @@
         {#    background-color: #ffffff;#}
         {#    border-radius: 20px;#}
         {#    box-shadow: 0px 25px 40px #1687d933;#}
-
-        label {
-            font-family: Baskerville;
-        }
         input {
             border: 2px solid red;
             border-radius: 2px;
@@ -38,20 +50,34 @@
         p {
             font-size: 12px;
             color: red;
+            font-family: 'Poppins', sans-serif
+        }
+        body {
+            font-family: 'Poppins', sans-serif
+        }
+        h1, h2, label, button, div, a {
+            font-family: 'Poppins', sans-serif
+        }
+        .hiddenb {
+            border-radius: 95%;
+            width:25px;
+            visibility:hidden
         }
     </style>
 {% endblock %}
 {% block body %}
     <body>
-<br>
-<form>
+        <h1>Register</h1>
+<container>
+<form style="padding-right:5rem; padding-left: 5rem">
+    <h2>Welcome!</h2>
     <div class="form-row">
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-6" style="width:50px;">
             <label for="inputName">Name</label>
             <input type="text" class="form-control" id="inputName" required placeholder="Name (Just first name is OK)">
             <p>*Required Field</p>
         </div>
-        <div class="form-group">
+        <div class="form-group" style="margin-left:5rem">
             <label for="inputPhone">Phone Number</label>
             <input type="text" class="form-control" id="inputPhone" required placeholder="Phone Number">
         </div>
@@ -74,7 +100,7 @@
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputCity">City
-            <button id="button" style="border-radius: 95%">?</button></label>
+            <button id="button" style="border-radius: 95%;width:25px">?</button></label>
             <script>
                 $('button').click(function(){
                     $('#Modal').modal('show');
@@ -100,7 +126,9 @@
             <p>*Required Field</p>
         </div>
         <div class="form-group col-md-4">
-            <label for="inputState">State</label>
+            <label for="inputState">State
+                <button class="hiddenb">?</button>
+            </label>
             <select id="inputState" class="form-control">
                 <option selected>Choose...</option>
                 <option>Alabama</option>
@@ -156,7 +184,9 @@
             </select>
         </div>
         <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
+            <label for="inputZip">Zip
+                <button class="hiddenb">?</button>
+            </label>
             <input type="text" class="form-control" id="inputZip">
         </div>
     </div>
@@ -173,8 +203,19 @@
         </div>
     </div>
     <button type="submit" class="btn btn-outline-primary">Sign Up</button>
+    <br><br><br>
+    <center style="margin-bottom:5rem;">
+        <div class="divider">
+        <hr class="left"/>
+        Returning User?
+        <hr class="right"/>
+        <p> <br>
+            <a href="{{ url_for('login') }}">Log In</a></p> <br>
+    </div>
+    </center>
 </form>
-<br>
+</container>
+<br><br>
     </body>
 {% endblock %}
 </html>

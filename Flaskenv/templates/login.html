@@ -5,68 +5,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Project ELIMIN8|Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
     <style>
-        hr {
-            width: 25%;
-        }
-        .left {
-            float:left;
-        }
-
-        .right {
-            float:right;
-        }
-        .divider {
-            width:500px;
-            text-align:center;
-        }
-
-        .divider hr {
-            margin-left:auto;
-            margin-right:auto;
-            width:40%;
-
-        }
-        container {
-            justify-content: center;
-        }
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
-            height: 100vh;
-            {#justify-content: center;#}
-            {#align-items: center;#}
-        }
-        container {
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            width: 70%;
-            height: 85%;
-            background-color: #ffffff;
-            border-radius: 20px;
-            box-shadow: 0px 25px 40px #1687d933;
-        }
     </style>
 </head>
 {% endblock %}
 {% block body %}
-<body>
+<body style="font-family: 'Poppins', sans-serif">
+    <h1 style="padding-top:3rem;padding-bottom:3rem">Welcome back!</h1>
 <container>
-<div class="form-group" style="width:200px;padding-left:25px">
-    <label for="inputEmail">Email</label>
-    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-</div>
-</div>
-<div class="form-group" style="width:200px;padding-left:25px">
-    <label for="inputPassword">Password</label>
-    <input type="password" class="form-control" minlength="8" required id="inputPassword" placeholder="Password">
-</div>
-    <div style="padding-left:25px">
-<button type="submit" class="btn btn-outline-primary">Login</button>
-    </div>
 <center>
+    <h3>Log In</h3>
+<div class="form-group">
+    <!-- <label for="inputEmail">Email</label> -->
+    <input style="height:3rem" type="email" class="form-control" id="inputEmail" placeholder="Email">
+</div>
+</div>
+<div class="form-group">
+    <!-- <label for="inputPassword">Password</label> -->
+    <input style="height:3rem" type="password" class="form-control" minlength="8" required id="inputPassword" placeholder="Password">
+</div>
+    <div style="padding-bottom: 3rem">
+<button type="submit" class="btn btn-outline-primary" style="width:5rem;margin-top:2rem">Login</button>
+    </div>
+</center>
+<center style="margin-bottom:5rem;">
     <div class="divider">
     <hr class="left"/>
     New User?
@@ -76,12 +40,6 @@
 </div>
 </center>
 </container>
-{#<center>#}
-{#    New User?#}
-{#    <hr style="width:15%"/>#}
-{#    <p> <br>#}
-{#        <a href="{{ url_for('register') }}">Register</a></p> <br>#}
-{#</center>#}
 </body>
 {% endblock %}
 </html>
