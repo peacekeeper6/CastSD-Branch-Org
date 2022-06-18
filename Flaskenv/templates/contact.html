@@ -1,16 +1,39 @@
 {% extends "layouts/base.html" %}
 <!DOCTYPE html>
 <html lang="en">
+{% block head %}
 <head>
     <meta charset="UTF-8">
     <title>Project ELIMIN8|Contact</title>
+    <style>
+        fart {
+            display: inline-block;
+            border: solid #FCA101;
+            border-width: 0 3px 3px 0;
+            padding: 3px;
+            transform:rotate(-135deg)
+        }
+    </style>
 </head>
-<body>
+{% endblock %}
+{% block body %}
+<div class="fart"></iv>
+If you would like to learn more about us, check out the <a href="{{url_for('aboutelimin8') }}">About Page</a> if you haven't already!
+<p>
 Would you like to request a partnership, donate, or just talk to us? Feel free to refer to any of these contact methods below!
-
+</p>
 To contact the individual founding members, refer to the
-<a href="{{ url_for('founders') }}">
-<p>Founders page</p>
-</a>
+<a href="{{ url_for('founders') }}">Founders page</a>
+<br>
+For further contact and inquiries, please feel free to reach out to any of the listed contacts!
+<br>
+Email: <a href="mailto:elimin8sd@gmail.com">elimin8sd@gmail.com</a>
+<br>
+Instagram: <a href="https://www.instagram.com/elimin8sd/?hl=en">@elimin8sd</a>
+<br>
+LinkedIn: <a href="">We don't have one yet!</a>
+<br>
+To view the source code of this website, please refer to the <a href="https://github.com/peacekeeper6/ELIMIN8">GitHub Repository</a>
 </body>
+{% endblock %}
 </html>
