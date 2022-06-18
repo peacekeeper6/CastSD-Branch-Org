@@ -1,0 +1,64 @@
+h1 {
+    display:flex;
+    justify-content: center;
+    color: #000000;
+    margin-bottom:5rem;
+    margin-top:5rem;
+    font-family: 'Poppins', sans-serif;
+}
+hr {
+    width: 50%;
+}
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+.divider {
+    width:500px;
+    text-align:center;
+}
+
+.divider hr {
+    margin-left:auto;
+    margin-right:auto;
+    width:40%;
+
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    /* margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    height: 100vh;
+    {#justify-content: center;#}
+    {#align-items: center;#} */
+    /* background-image: url({{ url_for('static', filename='assets/background.jpg') }});
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    min-height: 100%; */
+}
+container {
+    /* align-items: center;
+    align-content: center;
+    justify-content: center; */
+    padding-top:5rem;
+    margin: auto;
+    width: 50rem;
+    height: 85%;
+    background-color: #ffffff; 
+    border-radius: 15px;
+    /* border-radius: 20px; */
+    box-shadow: 0px 25px 40px #1687d933;
+    margin-bottom:3rem;
+}
+.input {
+    height:3rem;
+    font-family: 'Poppins', sans-serif;
+}
+.form-group {
+    width: 250px;
+    margin-top:2rem
+}

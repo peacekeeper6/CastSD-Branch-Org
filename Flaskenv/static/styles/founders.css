@@ -4,15 +4,33 @@ h1 {
     justify-content: center;
     color: #000000;
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
+
+body 
+     {
+        background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
+                background-size: 400% 400%;
+                animation: gradient 10s ease infinite;
+                height: 100vh;
+            }
+    
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
 
 .flip-card {
     background-color: transparent;
     width: 300px;
     height: 300px;
     perspective: 1000px;
+    margin-bottom:7rem;
 }
 
 .flip-card-inner {
@@ -54,6 +72,7 @@ container {
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
+    margin-top:4rem;
 }
 fieldset {
     display: flex;
@@ -62,4 +81,5 @@ fieldset {
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-bottom:7rem;
 }
