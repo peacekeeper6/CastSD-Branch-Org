@@ -9,7 +9,7 @@ h1 {
     margin-bottom:5rem;
 } 
 h2 {
-    margin-bottom:2rem
+    margin-bottom:5rem
 }
 container {
     padding-top:5rem;
@@ -73,7 +73,7 @@ span {
     margin: auto;
     text-align: center;
 } */
-a, .parent {
+#a, .parent {
     margin-bottom: 5rem
 }
 
