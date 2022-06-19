@@ -14,72 +14,20 @@
         padding: 20px 0px;
         margin: 0px 20px;
         position: relative;
+        border-bottom: 3px solid transparent;
     }
-    .nav-link:after {
-        text-decoration: underline
-        transform: scaleX(0);
-        transform-origin: bottom right
-    }
-    /* .nav-link:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #0087ca;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-    }
-    .nav-link:hover:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    } */
-    /* .navbar a:hover {
-        border-bottom: 3px solid red;
-    }
-
-    .navbar a.active {
-        border-bottom: 3px solid red;
-    } */
-    /* .nav-link {
-        font-weight: bold;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: #031D44;
-        padding: 20px 0px;
-        margin: 0px 20px;
-        position: relative;
-        align-items:center;
-        opacity: 0.75;
-        }
     .nav-link:hover {
+        border-bottom: 3px solid #89CFF0;
+    }
+    .dropdown-menu {
+        background-color: #e7ffff;
+        transform: translateY(-2px);
+        box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+        visibility: visible;
         opacity: 1;
-        }
-
-    .nav-link::before {
-        transition: 300ms;
-        height: 5px;
-        content: "";
-        position: absolute;
-        background-color: #031D44;
-        }
-
-    .nav-link::before {
-        width: 0%;
-        bottom: 10px;
-        }
-
-    .nav-link:hover::before {
-        width: 100%;
-        } */
-    {#light {#}
-    {#    background-color: #FFFFFF;#}
-    {#    color: #000000;#}
-    {#dark {#}
-    {#    background-color: #000000;#}
-    {#    color: #FFFFFF;#}
+        transform: translateY(0px);
+        z-index:999
+    }
 </style>
 <nav class="navbar navbar-expand-lg navbar-light bg-* sticky" id="navbar" style="font-family: 'Poppins', sans-serif">
     <div class="container-fluid">
@@ -113,40 +61,9 @@
                     <a class="dropdown-item" href={{ url_for('register') }}>Register</a>
                 </div>
             </li>
-            <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
-{#            <a class="nav-link" href={{ url_for('index') }}></a>#}
-            <!-- <a class="nav-link" href="{{ url_for('login') }}">Login</a> -->
-            <!-- stub is shown using the name of the route -->
-            <!-- <a class="nav-link" href="{{ url_for('getinvolved') }}">Get Involved</a> -->
             <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
         </div>
     </div>
-        <!-- <input value="Toggle Mode" type="submit" onclick="darkToggle()" name="DarkToggle" class="btn btn-outline-primary" id="DarkToggle">
-{#        <label class="custom-control-label" for="DarkToggle">Dark Mode</label>#}
-{#        <div class="btn btn-outline-primary" role="button" onclick="DarkToggle()" style="padding-right:10px; cursor: pointer">Toggle Dark Mode</div>#} -->
-        <script>
-            {#let darkmode = document.body.getElementsByTagName("*");#}
-            {#let darkmode = document.querySelector( 'body *' );#}
-            {#let darkmode = document.querySelector('body');#}
-            {#let lightmode = document.querySelector('body')#}
-            {#let darkmode = document.body;#}
-            {#document.getElementById('DarkToggle').onclick = function DarkToggle() {#}
-            {#    darkmode.classList.toggle("dark");#}
-            {#function myFunction() {#}
-            {#    let element = document.body;#}
-            {#    element.classList.toggle("dark-mode");#}
-                {#darkmode.style.cssText = 'background-color:#393433; color: #FFFFFFF;'#}
-            {#function myFunction() {#}
-            {#    var element = document.body;#}
-            {#    element.classList.toggle("dark-mode");#}
-
-            {#document.getElementById('LightToggle').onclick = function LightToggle() {#}
-            {#    lightmode.style.cssText = 'background-color:#FFFFFF; color:#000000;'#}
-            {#let lightmode = document.querySelector('body');#}
-            {#let darkmode = document.querySelector('body');#}
-            {#function DarkToggle(){#}
-            {#    darkmode.style.cssText = 'background-color: #000000; color: #FFFFFF;'#}
-        </script>
         <div style="padding-right:10px; padding-left:10px" id="google_translate_element"></div>
         <script type="text/javascript">
             function googleTranslateElementInit() {
@@ -160,10 +77,10 @@
         <script type="text/javascript" src=
                 "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
         </script>
-        {# <form class="form-inline">
+         <form class="form-inline">
            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-         </form> #}
+         </form>
 {#        <div class="navbar-right">#}
 {#            <div class="navbar-nav">#}
 {#                <a class="nav-link" style="padding-left: 5px" href="{{ url_for('login') }}"><b>Login</b></a>#}
