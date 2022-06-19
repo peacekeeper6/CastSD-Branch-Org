@@ -8,17 +8,50 @@
     }
     .nav-link {
         color: #000000;
+        font-weight:bold;
+        display:inline-block;
+        text-transform: uppercase;
+        padding: 20px 0px;
+        margin: 0px 20px;
+        position: relative;
     }
-    .nav-link {
+    .nav-link:after {
+        text-decoration: underline
+        transform: scaleX(0);
+        transform-origin: bottom right
+    }
+    /* .nav-link:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .nav-link:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    } */
+    /* .navbar a:hover {
+        border-bottom: 3px solid red;
+    }
+
+    .navbar a.active {
+        border-bottom: 3px solid red;
+    } */
+    /* .nav-link {
         font-weight: bold;
         font-size: 14px;
         text-transform: uppercase;
-        text-decoration: none;
         color: #031D44;
         padding: 20px 0px;
         margin: 0px 20px;
-        display: inline-block;
         position: relative;
+        align-items:center;
         opacity: 0.75;
         }
     .nav-link:hover {
@@ -40,7 +73,7 @@
 
     .nav-link:hover::before {
         width: 100%;
-        }
+        } */
     {#light {#}
     {#    background-color: #FFFFFF;#}
     {#    color: #000000;#}
@@ -48,7 +81,7 @@
     {#    background-color: #000000;#}
     {#    color: #FFFFFF;#}
 </style>
-<nav class="navbar navbar-expand-lg navbar-light bg-* sticky" style="font-family: 'Poppins', sans-serif">
+<nav class="navbar navbar-expand-lg navbar-light bg-* sticky" id="navbar" style="font-family: 'Poppins', sans-serif">
     <div class="container-fluid">
     <a class="navbar-brand" href="{{url_for('index')}}">
         <img src="/static/assets/image_6483441.JPG" width="75rem" height="50rem" class="center" alt="">
