@@ -39,9 +39,9 @@ h1 {
     margin-top: 60rem;
     transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
     padding: 10px;
-    border-radius: 5px;
-    background: rgba(240,230,220, .7);
-    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    background-color: #ffffff; 
+    border-radius: 15px;
+    box-shadow: 0px 25px 40px #1687d933;
   }
 #slide-image2 {
     position: absolute;
@@ -51,9 +51,9 @@ h1 {
     height: 450px;
     margin-top: 50rem;
     padding: 10px;
-    border-radius: 5px;
-    background: rgba(240,230,220, .7);
-    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+    background-color: #ffffff; 
+    border-radius: 15px;
+    box-shadow: 0px 25px 40px #1687d933;
     transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
 p {
@@ -71,7 +71,7 @@ p {
     width: 40%;
     padding: 5%;
     padding-top:5rem;
-     margin: auto; 
+    margin: auto; 
     background-color: #ffffff; 
     border-radius: 15px;
     box-shadow: 0px 25px 40px #1687d933;
