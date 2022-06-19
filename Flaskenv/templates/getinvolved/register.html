@@ -1,0 +1,167 @@
+{% extends "layouts/base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+    <meta charset="UTF-8">
+    <title>Project ELIMIN8|Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/register.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <style>
+        
+    </style>
+{% endblock %}
+{% block body %}
+    <body>
+        <h1>Register</h1>
+<container>
+<form style="padding-right:5rem; padding-left: 5rem">
+    <h2>Welcome!</h2>
+    <div class="form-row">
+        <div class="form-group col-md-6" style="width:50px;">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" required placeholder="Name (Just first name is OK)">
+            <p class="requiredb">*Required Field</p>
+        </div>
+        <div class="form-group" style="margin-left:6rem">
+            <label for="inputPhone">Phone Number</label>
+            <input style="width:18rem" type="text" class="form-control" id="inputPhone" required placeholder="Phone Number">
+            <p class="requiredb">*Required Field</p>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            <p class="requiredb">*Required Field</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password (8 characters minimum)</label>
+        <input type="password" class="form-control" minlength="8" required id="inputPassword" placeholder="Password">
+        <p class="requiredb">*Required Field</p>
+    </div>
+    <!-- <div class="form-group">
+        <label for="inputPasswordConfirm">Confirm Password</label>
+        <input type="password" class="form-control" minlength="8" required id="inputPasswordConfirm" placeholder="Confirm Password">
+        <p class="requiredb">*Required Field</p>
+    </div> -->
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputCity">City
+            <button id="button" style="border-radius: 95%;width:25px">?</button></label>
+            <script>
+                $('button').click(function(){
+                    $('#Modal').modal('show');
+                });
+            </script>
+            <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="color:#000000" id="myModalLabel">Why we ask for this information</h4>
+                        </div>
+                        <div class="modal-body">
+                            We ask for this information in order to better understand the connections that need to be set up in your area. Through this, we are able to assess your options!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="text" required class="form-control" id="inputCity">
+            <p class="requiredb">*Required Field</p>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputState">State
+                <button class="hiddenb">?</button>
+            </label>
+            <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputZip">Zip
+                <button class="hiddenb">?</button>
+            </label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputExtra">Anything else you would like us to know (Pronouns, Not Located in the USA, etc)</label>
+        <textarea class="form-control" id="inputExtra" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" required type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                By creating an account with Project ELIMIN8 of Cast-SD, you are agreeing to being contacted by any of the given methods.
+            </label>
+        </div>
+    </div>
+    <button id="signup" type="submit" class="btn btn-outline-primary">Sign Up</button>
+    <center>
+    <div class="parent">
+        <div class="split">
+            <span>
+              Returning User?
+            </span>
+          </div>
+            <a class="a" href="{{ url_for('login') }}">Log In</a></p> 
+        </div>
+    </center>
+</form>
+</container>
+    </body>
+{% endblock %}
+</html>
