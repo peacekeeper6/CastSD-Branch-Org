@@ -13,7 +13,21 @@ h8 {
     font-size: 25px;
     color: #000000;
 }
+.row {
+    justify-content:center
+}
+#row1 {
+    margin-top:5rem;
+    margin-bottom:2rem
+}
+#row2 {
+    margin-bottom:5rem
+}
+#partner {
+    width:25rem;
+    height:15rem;
 
+}
 body 
      {
         color:#000000;
@@ -51,10 +65,9 @@ body
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
+    padding: 30px;
     text-align: center;
     background-color: #f1f1f1;
-
 }
 h9 {
     font-size: 25px;
