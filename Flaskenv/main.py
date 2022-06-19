@@ -35,12 +35,12 @@ def founders():
     return render_template("aboutus/founders.html")
 
 
-@app.route('/getinvolved')
+@app.route('/getinvolved/')
 def getinvolved():
     return render_template("getinvolved/getinvolved.html")
 
 
-@app.route('/login')
+@app.route('/login/')
 def login():
     return render_template("getinvolved/login.html")
 

@@ -5,24 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Project ELIMIN8|Donation Form</title>
-    <style>
-        iframe {
-            display:flex;
-            margin:auto;
-            width: 50rem;
-        }
-        container {
-            padding-top:5rem;
-            margin: auto;
-            width: 60rem;
-            height: 100rem;
-            background-color: #ffffff; 
-            border-radius: 15px;
-            box-shadow: 0px 25px 40px #1687d933;
-            margin-bottom: 5rem;
-            margin-top: 5rem;
-        } 
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/donation.css') }}">
 </head>
 {% endblock %}
 {% block body %}
