@@ -1,0 +1,35 @@
+{% extends "layouts/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <title>Project ELIMIN8|Donation Form</title>
+    <style>
+        iframe {
+            display:flex;
+            margin:auto;
+            width: 50rem;
+        }
+        container {
+            padding-top:5rem;
+            margin: auto;
+            width: 60rem;
+            height: 100rem;
+            background-color: #ffffff; 
+            border-radius: 15px;
+            box-shadow: 0px 25px 40px #1687d933;
+            margin-bottom: 5rem;
+            margin-top: 5rem;
+        } 
+    </style>
+</head>
+{% endblock %}
+{% block body %}
+<body>
+    <container>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLZTwQ1l1xiJ5dpKnNX16MWATEJonQnnGFMbsJ7M7oJ3Wapw/viewform?embedded=true" width="640" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</container>
+</body>
+{% endblock %}
+</html>
