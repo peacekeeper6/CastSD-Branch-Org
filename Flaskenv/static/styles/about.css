@@ -10,7 +10,7 @@ body {
             background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
             background-size: 400% 400%;
             animation: gradient 10s ease infinite;
-            height: 100vh;
+            height: 100%;
         }
 
         @keyframes gradient {
@@ -27,6 +27,7 @@ body {
 body { 
     height: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -66,8 +67,8 @@ p {
 }
 
 .kard {
-    min-height: 100vh;
-    width: 100vw;
+    min-height: 95%;
+    width: 100%;
     display: inline;
 }
 .title {
@@ -80,14 +81,14 @@ p {
     box-shadow: 0px 25px 40px #1687d933;
 }
 .kard:nth-child(2n) .title {
-    margin-left: 7rem;
+    margin-left: 10%;
     margin-right: auto;
 }
 
 .kard:nth-child(2n+1) .title {
     margin-left: auto;
-    margin-right: 7rem;
+    margin-right: 10%;
 }
 .spacing {
-    margin-top: 5rem;
+    margin-top: 5%;
 }

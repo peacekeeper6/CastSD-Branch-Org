@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 h1, h2, label, button, div, a, body, p {
     font-family: 'Poppins', sans-serif
 }
