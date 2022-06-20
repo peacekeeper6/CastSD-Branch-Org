@@ -17,24 +17,32 @@ h8 {
     justify-content:center
 }
 #row1 {
-    margin-top:5rem;
-    margin-bottom:2rem
+    margin-top:7%;
+    margin-bottom:3%
 }
 #row2 {
-    margin-bottom:5rem
+    margin-bottom:7%
 }
-#partner {
+/* #partner {
     width:25rem;
     height:15rem;
-
+} */
+/* #panera {
+    width: 85%;
+    max-height: 200%;
+} */
+#jimbos, #panera, #foundry, #producegood {
+    width: 85%;
+    height: auto;    
 }
 body 
      {
+        overflow-x: hidden;
         color:#000000;
         background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
                 background-size: 400% 400%;
                 animation: gradient 10s ease infinite;
-                height: 100vh;
+                height: 100%;
             }
     
             @keyframes gradient {
@@ -55,14 +63,24 @@ body
     padding: 0 10px;
 }
 
-.row {margin: 0 -5px;}
+/* .row {margin: 0 -5px;}
 
 .row:after {
     content: "";
     display: table;
     clear: both;
-}
-
+} */
+/* container {
+    bottom: 0;
+    left: 0;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+} */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 30px;
