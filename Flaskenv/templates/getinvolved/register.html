@@ -3,16 +3,20 @@
 <!DOCTYPE html>
 <html lang="en">
 {% block head %}
+<head>
     <meta charset="UTF-8">
     <title>Project ELIMIN8|Register</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/register.css') }}">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
-    <style>
-        
-    </style>
+</head>
 {% endblock %}
 {% block body %}
     <body>
+        <div>
+            <div class="scroll-text">
+                The login and register pages are currently under maintenance. To contact us, refer to the <a href="{{ url_for('contact') }}">Contact Page</a>. To donate, refer to the <a href="{{ url_for('donation') }}">Donation Form</a>. We apologize for the misconvenience and are working to find a solution.
+            </div>
+        </div>
         <h1>Register</h1>
 <container>
 <form style="padding-right:5rem; padding-left: 5rem">
