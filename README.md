@@ -16,7 +16,7 @@ Feel free to reach out at any time. Project ELIMIN8 has and always will be for t
 
 ### Instagram: https://www.instagram.com/elimin8sd/?hl=en
 
-### E-mail: mailto:elimin8sd@gmail.com
+### E-mail: elimin8sd@gmail.com
 
 ### LinkedIn: Coming Soon!
 
