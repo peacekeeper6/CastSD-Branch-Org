@@ -25,34 +25,39 @@ def aboutelimin8():
     return render_template("aboutus/aboutelimin8.html")
 
 
+@app.route('/partners')
+def partners():
+    return render_template("aboutus/partners.html")
+
+    
 @app.route('/founders')
 def founders():
     return render_template("aboutus/founders.html")
 
 
-@app.route('/partners')
-def partners():
-    return render_template("aboutus/partners.html")
-
-
 @app.route('/getinvolved/')
 def getinvolved():
-    return render_template("getinvolved.html")
+    return render_template("getinvolved/getinvolved.html")
+
+
+@app.route('/login/')
+def login():
+    return render_template("getinvolved/login.html")
+
+
+@app.route('/register')
+def register():
+    return render_template("getinvolved/register.html")
+
+
+@app.route('/donation/')
+def donation():
+    return render_template("donation.html")
 
 
 @app.route('/contact/')
 def contact():
     return render_template("contact.html")
-
-
-@app.route('/login/')
-def login():
-    return render_template("login.html")
-
-
-@app.route('/register')
-def register():
-    return render_template("register.html")
 
 
 @app.errorhandler(404)

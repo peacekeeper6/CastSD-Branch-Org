@@ -3,70 +3,20 @@
 <!DOCTYPE html>
 <html lang="en">
 {% block head %}
+<head>
     <meta charset="UTF-8">
     <title>Project ELIMIN8|Register</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/register.css') }}">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
-    <style>
-        h1 {
-            display:flex;
-            justify-content: center;
-            color: #000000;
-            margin-top:2rem;
-            margin-bottom:5rem;
-        } 
-        h2 {
-            margin-bottom:2rem
-        }
-        container {
-            /* align-items: center;
-            align-content: center;
-            justify-content: center; */
-            padding-top:5rem;
-            margin: auto;
-            width: 60rem;
-            height: 100rem;
-            background-color: #ffffff; 
-            border-radius: 15px;
-            /* border-radius: 20px; */
-            box-shadow: 0px 25px 40px #1687d933;
-        } */
-        {#form {#}
-        {#    width: 70%;#}
-        {#    height: 85%;#}
-        {#    background-color: #ffffff;#}
-        {#    border-radius: 20px;#}
-        {#    box-shadow: 0px 25px 40px #1687d933;#}
-        {#wrapper {#}
-        {#    width: 70%;#}
-        {#    height: 85%;#}
-        {#    background-color: #ffffff;#}
-        {#    border-radius: 20px;#}
-        {#    box-shadow: 0px 25px 40px #1687d933;#}
-        input {
-            border: 2px solid red;
-            border-radius: 2px;
-        }
-        p {
-            font-size: 12px;
-            color: red;
-            font-family: 'Poppins', sans-serif
-        }
-        body {
-            font-family: 'Poppins', sans-serif
-        }
-        h1, h2, label, button, div, a {
-            font-family: 'Poppins', sans-serif
-        }
-        .hiddenb {
-            border-radius: 95%;
-            width:25px;
-            visibility:hidden
-        }
-    </style>
+</head>
 {% endblock %}
 {% block body %}
     <body>
+        <div>
+            <div class="scroll-text">
+                The login and register pages are currently under maintenance. To contact us, refer to the <a href="{{ url_for('contact') }}">Contact Page</a>. To donate, refer to the <a href="{{ url_for('donation') }}">Donation Form</a>. We apologize for the inconvenience and are working to find a solution.
+            </div>
+        </div>
         <h1>Register</h1>
 <container>
 <form style="padding-right:5rem; padding-left: 5rem">
@@ -75,28 +25,29 @@
         <div class="form-group col-md-6" style="width:50px;">
             <label for="inputName">Name</label>
             <input type="text" class="form-control" id="inputName" required placeholder="Name (Just first name is OK)">
-            <p>*Required Field</p>
+            <p class="requiredb">*Required Field</p>
         </div>
-        <div class="form-group" style="margin-left:5rem">
+        <div class="form-group" style="margin-left:6rem">
             <label for="inputPhone">Phone Number</label>
-            <input type="text" class="form-control" id="inputPhone" required placeholder="Phone Number">
+            <input style="width:18rem" type="text" class="form-control" id="inputPhone" required placeholder="Phone Number">
+            <p class="requiredb">*Required Field</p>
         </div>
         <div class="form-group col-md-6">
             <label for="inputEmail">Email</label>
             <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-            <p>*Required Field</p>
+            <p class="requiredb">*Required Field</p>
         </div>
     </div>
     <div class="form-group">
         <label for="inputPassword">Password (8 characters minimum)</label>
         <input type="password" class="form-control" minlength="8" required id="inputPassword" placeholder="Password">
-        <p>*Required Field</p>
+        <p class="requiredb">*Required Field</p>
     </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
         <label for="inputPasswordConfirm">Confirm Password</label>
         <input type="password" class="form-control" minlength="8" required id="inputPasswordConfirm" placeholder="Confirm Password">
-        <p>*Required Field</p>
-    </div>
+        <p class="requiredb">*Required Field</p>
+    </div> -->
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputCity">City
@@ -123,7 +74,7 @@
             </div>
 
             <input type="text" required class="form-control" id="inputCity">
-            <p>*Required Field</p>
+            <p class="requiredb">*Required Field</p>
         </div>
         <div class="form-group col-md-4">
             <label for="inputState">State
@@ -202,20 +153,19 @@
             </label>
         </div>
     </div>
-    <button type="submit" class="btn btn-outline-primary">Sign Up</button>
-    <br><br><br>
-    <center style="margin-bottom:5rem;">
-        <div class="divider">
-        <hr class="left"/>
-        Returning User?
-        <hr class="right"/>
-        <p> <br>
-            <a href="{{ url_for('login') }}">Log In</a></p> <br>
-    </div>
+    <button id="signup" type="submit" class="btn btn-outline-primary">Sign Up</button>
+    <center>
+    <div class="parent">
+        <div class="split">
+            <span>
+              Returning User?
+            </span>
+          </div>
+            <a class="a" href="{{ url_for('login') }}">Log In</a></p> 
+        </div>
     </center>
 </form>
 </container>
-<br><br>
     </body>
 {% endblock %}
 </html>

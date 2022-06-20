@@ -5,7 +5,7 @@ body, html {
 
     height: 100%;
     margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
+    font: 400 15px/1.8 'Poppins', sans-serif";
     color: #777;
 }
 body {
@@ -39,13 +39,13 @@ h7 {
     padding-top: 450px;
     overflow: hidden;
     white-space: nowrap;
-    animation: koinonia 3s linear 0s;
+    animation: elimin8 3s linear 0s;
 }
 
 h10 {
     color: gray;
 }
-@keyframes koinonia {
+@keyframes elimin8 {
     from {
         width: 200px;
     }

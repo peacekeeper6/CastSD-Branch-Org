@@ -1,13 +1,41 @@
 {% extends "layouts/base.html" %}
 <!DOCTYPE html>
 <html lang="en">
+{% block head %}
 <head>
     <meta charset="UTF-8">
     <title>Project ELIMIN8|About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/about.css') }}">
+    <style>
+    </style>
 </head>
+{% endblock %}
 {% block body %}
 <body>
-Project ELIMIN8 was started with one goal in mind: to reduce waste while reducing starvation.
+    <div class="spacing"></div>
+    <div class="placholder"></div>
+    <div id="kard1" class="kard">
+        <div class="title">
+          <h1>What is Project ELIMIN8?</h1>
+          <p>Project ELIMIN8 was started with one goal in mind: to reduce waste and starvation. We are an ever-growing non-profit branch organization under CastSD that hopes to become independent soon. We are mainly located in San Diego, California but have expanded to other areas across America and are looking to expand throughout the world as well.</p>
+        </div>
+      </div>
+    
+      <div id="kard2" class="kard">
+        <div class="title">
+          <h1>What does Project ELIMIN8 do?</h1>
+          <p>Members of Project ELIMIN8 pick up surplus food and donate it to organizations weekly. We set up relations between organizations that give us surplus food and donate to organizations that are in need of it. That way, we are able to help both causes with maximal effectiveness.</p>
+        </div>
+        <img id="slide-image1" src="/static/assets/pant.jpg">
+        <img id="slide-image2" src="/static/assets/chin.jpg"> 
+      </div>
+      
+      <div id="kard3" class="kard">
+        <div class="title">
+          <h1>How can I get involved?</h1>
+          <p>To become a member, you can register through our <a href="{{ url_for('register') }}">Register Page</a>. After creating an account, we will be in contact with you as soon as possible in order to set up a connection within your area. For donations, please refer to the <a href="{{ url_for('contact') }}">Donation Page</a>. For your unanswered questions, lingering curiosity, and anything in general, please refer to our <a href="{{ url_for('contact') }}">Contact Page</a>.</p>
+        </div>
+      </div>
 </body>
 {% endblock %}
 </html>

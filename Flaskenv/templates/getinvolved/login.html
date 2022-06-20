@@ -7,37 +7,37 @@
     <title>Project ELIMIN8|Login</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
-    <style>
-    </style>
 </head>
 {% endblock %}
 {% block body %}
-<body style="font-family: 'Poppins', sans-serif">
-    <h1 style="padding-top:3rem;padding-bottom:3rem">Welcome back!</h1>
+<body>
+    <div>
+        <div class="scroll-text">
+            The login and register pages are currently under maintenance. To contact us, refer to the <a href="{{ url_for('contact') }}">Contact Page</a>. To donate, refer to the <a href="{{ url_for('donation') }}">Donation Form</a>. We apologize for the inconvenience and are working to find a solution.
+        </div>
+    </div>
+    <h1 id="h1padding">Welcome back!</h1>
 <container>
 <center>
     <h3>Log In</h3>
 <div class="form-group">
-    <!-- <label for="inputEmail">Email</label> -->
     <input style="height:3rem" type="email" class="form-control" id="inputEmail" placeholder="Email">
 </div>
 </div>
 <div class="form-group">
-    <!-- <label for="inputPassword">Password</label> -->
     <input style="height:3rem" type="password" class="form-control" minlength="8" required id="inputPassword" placeholder="Password">
 </div>
-    <div style="padding-bottom: 3rem">
+    <div id="divpadding">
 <button type="submit" class="btn btn-outline-primary" style="width:5rem;margin-top:2rem">Login</button>
     </div>
 </center>
-<center style="margin-bottom:5rem;">
-    <div class="divider">
-    <hr class="left"/>
-    New User?
-    <hr class="right"/>
-    <p> <br>
-        <a href="{{ url_for('register') }}">Register</a></p> <br>
-</div>
+<center id="centerpadding">
+    <div id="newuser">
+        <span id="spancss">
+          New User?
+        </span>
+      </div>
+        <a href="{{ url_for('register') }}">Register</a></p> 
 </center>
 </container>
 </body>
