@@ -5,33 +5,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Project ELIMIN8|Contact</title>
-    <style>
-        .inlineforlinks {
-            display:inline
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/contact.css') }}">
 </head>
 {% endblock %}
 {% block body %}
 <body>
-    <div class="inlineforlinks">
-If you would like to learn more about us, check out the <a href="{{url_for('aboutelimin8') }}">About Page</a> if you haven't already!
-<p>
-Would you like to request a partnership, donate, or just talk to us? Feel free to refer to any of these contact methods below!
-</p>
-To contact the individual founding members, refer to the
-<a href="{{ url_for('founders') }}">Founders page</a>
-<br>
-For further contact and inquiries, please feel free to reach out to any of the listed contacts!
-<br>
-Email: <a href="mailto:elimin8sd@gmail.com">elimin8sd@gmail.com</a>
-<br>
-Instagram: <a href="https://www.instagram.com/elimin8sd/?hl=en">@elimin8sd</a>
-<br>
-LinkedIn: <a href="">We don't have one yet!</a>
-<br>
-To view the source code of this website, please refer to the <a href="https://github.com/peacekeeper6/ELIMIN8">GitHub Repository</a>
-</div>
+    <container>
+    <div class="card">
+        <h1 style="font-size:32px;margin-bottom:2rem">If you would like to learn more about us, check out the <a href="{{url_for('aboutelimin8') }}">About Page</a> if you haven't already!</h1>
+        </p>
+        <p><button class="btn btn-outline-primary" id="about" onclick=""><span>Take me to the About Page</span></button></p>
+      </div>
+    </container>
+    <container2>
+    <div class="divider">
+        <h1 style="font-size:22px;margin-bottom:2rem">Would you like to request a partnership, donate, or just talk to us? Feel free to refer to any of these contact methods below!</h1>
+      </div>
+    </container2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card">      
+                        <div class="card-body">
+                                <h1 style="font-size:32px;margin-bottom:3.2rem">To contact the individual founding members, refer to the <a href="{{ url_for('founders') }}">Founders Page</a></h1>
+                            <p><button class="btn btn-outline-primary" id="about" onclick=""><span>Take me to the Founders Page</span></button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">      
+                        <div class="card-body">
+                                <h1 style="font-size:32px;margin-bottom:2rem">For further contact and inquiries, please feel free to reach out to any of the listed contacts!</h1>
+                              
+                                <div id="socials" class="col item social"><a href="https://www.instagram.com/elimin8sd/?hl=en"><i id="insta" class="fa fa-instagram"></i></a>
+                                    <a id="gmail" href="mailto:elimin8sd@gmail.com""><i class="fa fa-envelope"></i></a>
+                                      <a id="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                      <a id="github" href="https://github.com/peacekeeper6/ELIMIN8"><i class="fa fa-github"></i></a></div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 {% endblock %}
 </html>

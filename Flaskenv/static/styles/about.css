@@ -1,9 +1,12 @@
+div {
+    font-family: 'Poppins', sans-serif;
+
+}
 html {
     height: 100%;
     overflow: hidden;
 }
 body {
-            font-family: 'Poppins', sans-serif;
             background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
             background-size: 400% 400%;
             animation: gradient 10s ease infinite;

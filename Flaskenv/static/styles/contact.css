@@ -1,0 +1,108 @@
+body, div {
+    font-family: 'Poppins', sans-serif;
+}
+.inlineforlinks {
+    display:inline
+}
+body {
+    background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.card, .divider {
+padding-top: 2rem;
+padding-bottom: 1rem;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+width: 500px;
+margin: auto;
+text-align: center;
+}
+
+.btn {
+display: inline-block;
+border-radius: 4px;
+background-color: #f4511e;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+transition: all 0.5s;
+margin: 5px;
+}
+
+.btn span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.btn span:after {
+content: '»';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0s;
+}
+
+.btn:hover span {
+padding-right: 25px;
+}
+
+.btn:hover span:after {
+opacity: 1;
+right: 0;
+}
+#about {
+width: 75%;
+height:2.5rem;
+padding:8px;
+}
+h1 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size:24px;
+    margin-bottom:2rem;
+    padding: 10px 10px
+}
+container {
+    margin-top: 10rem;
+    margin-bottom:10rem;
+}
+.divider {
+    display: flex;
+    justify-content: center;
+    width: 99vw;
+}
+container2 {
+    margin-bottom: 10rem;
+}
+#margin {
+    margin-left:10%
+}
+#insta, #gmail, #linkedin, #github {
+    font-size:30px;
+    padding: 2px 2px
+}
+#socials {
+    margin-bottom: 1px;
+}
+.container {
+    margin-top:4rem;
+    margin-bottom: 8rem;
+}
