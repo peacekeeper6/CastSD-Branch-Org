@@ -1,8 +1,10 @@
 {% extends "layouts/base.html" %}
 {% block head %}
 <meta charset="utf-8">
-{#<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">#}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
 <script src="{{ url_for('static', filename='script/index.js') }}"></script>
     <title>Project ELIMIN8</title>
     <style>
@@ -71,19 +73,13 @@
             padding: 3px;
             transform:rotate(-135deg);
         }
-        }
-        /* .triangle {
+        h7 {
+            margin-bottom: 5%;
             color:black;
-            width: 0;
-            height: 0;
-            border-left: 25px solid transparent;
-            border-right: 25px solid transparent;
-            border-bottom: 50px solid #555;
-        }
-        .up {
-            transform: rotate(-135deg);
-            -webkit-transform: rotate(-135deg);
-        } */
+            padding-left:15%;
+            font-size:95px;
+            font-family: 'Joan', serif;
+                }
     </style>
 {% endblock %}
 
@@ -94,7 +90,7 @@
         <div class="flex-parent hero-desktop">
             <div class="flex-child _40 hero-padding">
                 <div class="child-div">
-                    <h7 style="color:black;padding-left:15%;font-size:95px">
+                    <h7 style="margin-bottom: 5%;color:black;padding-left:15%;font-size:95px">
                         Project ELIMIN8
                     </h7>
                 </div>
