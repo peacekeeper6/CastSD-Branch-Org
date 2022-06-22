@@ -8,8 +8,6 @@ To become a member, you can register through our Register Page. After creating a
 
 ![image](https://user-images.githubusercontent.com/87632049/174547706-ce1b1740-3f1d-4b21-95d5-4084babe26ef.png) 
 
-These are the values that we hold dear to our organization.
-
 Project ELIMIN8 has and always will be for the people. Feel free to contact any of us for anything! 
 
 ## Down below are ways you can reach us: 
