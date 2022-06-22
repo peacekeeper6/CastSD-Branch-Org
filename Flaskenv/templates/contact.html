@@ -14,7 +14,7 @@
     <div class="card">
         <h1 style="font-size:32px;margin-bottom:2rem">If you would like to learn more about us, check out the <a href="{{url_for('aboutelimin8') }}">About Page</a> if you haven't already!</h1>
         </p>
-        <p><button class="btn btn-outline-primary" id="about" onclick=""><span>Take me to the About Page</span></button></p>
+        <p><a href="{{ url_for('aboutelimin8') }}" class="btn btn-outline-primary" id="about" onclick=""><span>Take me to the About Page</span></a></p>
       </div>
     </container>
     <container2>
@@ -28,7 +28,7 @@
                     <div class="card">      
                         <div class="card-body">
                                 <h1 style="font-size:32px;margin-bottom:3.2rem">To contact the individual founding members, refer to the <a href="{{ url_for('founders') }}">Founders Page</a></h1>
-                            <p><button class="btn btn-outline-primary" id="about" onclick=""><span>Take me to the Founders Page</span></button></p>
+                            <p><a href="{{ url_for('founders') }}" class="btn btn-outline-primary" id="about" onclick=""><span>Take me to the Founders Page</span></a></p>
                         </div>
                     </div>
                 </div>
