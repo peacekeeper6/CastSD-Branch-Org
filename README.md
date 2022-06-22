@@ -1,5 +1,6 @@
 # Project ELIMIN8
-## https://projectelimin8.tk/ ### Project ELIMIN8 was started with one goal in mind: to reduce waste and starvation. We are an ever-growing non-profit branch organization under CastSD that strives to make a change in our communities. We are mainly located in San Diego, California but have expanded to other areas across America and are looking to expand throughout the world as well. Members of Project ELIMIN8 pick up surplus food and donate it to organizations weekly. 
+## https://projectelimin8.tk/ 
+### Project ELIMIN8 was started with one goal in mind: to reduce waste and starvation. We are an ever-growing non-profit branch organization under CastSD that strives to make a change in our communities. We are mainly located in San Diego, California but have expanded to other areas across America and are looking to expand throughout the world as well. Members of Project ELIMIN8 pick up surplus food and donate it to organizations weekly. 
 
 We set up relations between organizations that give us surplus food and donate to organizations that are in need of it. That way, we are able to help both causes with maximal effectiveness. 
 
@@ -19,4 +20,5 @@ Project ELIMIN8 has and always will be for the people. Feel free to contact any 
 
 ### LinkedIn: Coming Soon! 
 
---- To reach our individual founders, refer to the deployed website link at the top of the README and go to the Founders Page.
+--- 
+To reach our individual founders, refer to the deployed website link at the top of the README and go to the Founders Page.
