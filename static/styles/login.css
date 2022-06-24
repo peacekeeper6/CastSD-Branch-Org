@@ -6,8 +6,8 @@ html {
     height: 100%;
     overflow: hidden;
 }
-h1, body, .input, div {
-    font-family: 'Poppins', sans-serif;
+h1, h2, label, button, div, a, body, p {
+    font-family: 'Poppins', sans-serif
 }
 /* body {
     background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
