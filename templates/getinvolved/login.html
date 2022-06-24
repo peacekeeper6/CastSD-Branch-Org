@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
     <style>
-        body {
+        genericcontainername {
             background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
             background-repeat: no-repeat;
             background-size:100% 100%;
@@ -26,6 +26,7 @@
 </head>
 {% endblock %}
 {% block body %}
+<genericcontainername>
 <body>
     <div>
         <div class="scroll-text">
@@ -57,5 +58,6 @@
 </center>
 </container>
 </body>
+</genericcontainername>
 {% endblock %}
 </html>
