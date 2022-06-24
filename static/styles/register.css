@@ -14,6 +14,7 @@ h1, h2, label, button, div, a, body, p {
     font-family: 'Poppins', sans-serif
 }
 h1 {
+    font-weight:normal;
     display:flex;
     justify-content: center;
     color: #000000;
@@ -93,6 +94,7 @@ span {
     margin-bottom:4rem
 }
 .scroll-text {
+    font-size:24px;
     margin-bottom: 3rem;
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);

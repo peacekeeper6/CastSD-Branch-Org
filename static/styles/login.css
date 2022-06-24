@@ -83,6 +83,7 @@ container {
     margin-bottom: 2rem
 }
 .scroll-text {
+    font-size:24px;
     margin-bottom: 3rem;
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
