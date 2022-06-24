@@ -1,8 +1,11 @@
-
 h1 {
     display: flex;
     justify-content: center;
     color: #000000;
+}
+html {
+    height: 100%;
+    overflow: hidden;
 }
 hr {
     width: 25%;

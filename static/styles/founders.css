@@ -4,7 +4,10 @@ h1 {
     justify-content: center;
     color: #000000;
 }
-
+html {
+    height: 100%;
+    overflow: hidden;
+}
 body 
      {
             background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
