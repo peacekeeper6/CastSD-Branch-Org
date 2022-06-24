@@ -8,12 +8,20 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
     <style>
-        /* body {
+        body {
             background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
             background-repeat: no-repeat;
             background-size:100% 100%;
             min-height: 100%;
-      } */
+        }
+      body {
+            color: #000000;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            height: 100vh;
+        }
     </style>
 </head>
 {% endblock %}

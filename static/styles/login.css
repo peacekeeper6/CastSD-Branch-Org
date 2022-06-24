@@ -9,7 +9,7 @@ html {
 h1, body, .input, div {
     font-family: 'Poppins', sans-serif;
 }
-body {
+/* body {
     background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
     background-repeat: no-repeat;
     background-size:100% 100%;
@@ -22,7 +22,7 @@ body {
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     height: 100vh;
-}
+} */
 
 @keyframes gradient {
     0% {
