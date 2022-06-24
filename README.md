@@ -1,8 +1,23 @@
 # Project ELIMIN8
-## This branch was initially created in order to remedy an issue in VS Code that failed to identify myself as owner of this repository. This issue also resulted in me being able to commit to this branch with the same account while being unable to commmit to main.
+## https://projectelimin8.tk/ 
+### https://readme.projectelimin8.tk/
+### Project ELIMIN8 was started with one goal in mind: to reduce waste and starvation. We are an ever-growing non-profit branch organization under CastSD that strives to make a change in our communities. We are mainly located in San Diego, California but have expanded to other areas across America and are looking to expand throughout the world as well. Members of Project ELIMIN8 pick up surplus food and donate it to organizations weekly. 
 
-This issue is now fixed, but I continue to work on this branch and use it as the sole branch with a Flask virtual environment set up. The virtual environment causes conflictions with deployment as I am using git pull from main, so moving all files out of the venv allows for one to avoid these conflictions. I mostly commit to this branch for final touches then create pull requests to push to main, which will then trigger changes in the deployment once it is updated. 
+We set up relations between organizations that give us surplus food and donate to organizations that are in need of it. That way, we are able to help both causes with maximal effectiveness. 
 
----
+To become a member, you can register through our Register Page. After creating an account, we will be in contact with you as soon as possible in order to set up a connection within your area. For donations, please refer to the Donation Page. For your unanswered questions, lingering curiosity, and anything in general, please refer to our Contact Page. 
 
-If you are viewing this and happen to have the same problem as I did, feel free to contact me for help, as I was unable to find a solution through the countless videos and tutorials I researched and ended up having to create this branch as a solution.
+![image](https://user-images.githubusercontent.com/87632049/174547706-ce1b1740-3f1d-4b21-95d5-4084babe26ef.png) 
+
+Project ELIMIN8 has and always will be for the people. Feel free to contact any of us for anything! 
+
+## Down below are ways you can reach us: 
+
+### Instagram: https://www.instagram.com/elimin8sd/?hl=en 
+
+### E-mail: elimin8sd@gmail.com 
+
+### LinkedIn: Coming Soon! 
+
+--- 
+To reach our individual founders, refer to the deployed website link at the top of the README and go to the Founders Page.

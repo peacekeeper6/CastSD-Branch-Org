@@ -7,10 +7,10 @@ html {
     overflow: hidden;
 }
 body {
-            background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
-            background-size: 400% 400%;
-            animation: gradient 10s ease infinite;
-            height: 100%;
+            background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            height: 100vh;
         }
 
         @keyframes gradient {
@@ -96,5 +96,6 @@ p {
     margin-top: 5%;
 }
 #kard3 {
-    margin-bottom: 10%
+    margin-bottom: 15%;
+    margin-top: 15%
 }
