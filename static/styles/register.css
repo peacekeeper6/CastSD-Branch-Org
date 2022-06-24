@@ -1,5 +1,9 @@
 body {
     overflow-x: hidden;
+    background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 100vh;
 }
 h1, h2, label, button, div, a, body, p {
     font-family: 'Poppins', sans-serif
