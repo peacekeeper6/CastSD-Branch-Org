@@ -15,12 +15,14 @@
     <link rel="shortcut icon" href="\static\assets\image_6483441-removebg-preview.png">
 
 
-    {%block head %}
+    {% block head %}
 <style>
-    /* color: #000000;
-    background-image: url({{ url_for('static', filename='assets/background.jpg') }});
+    body {
+    color: #FFFFFF;
+    background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
     background-repeat: no-repeat;
-    background-size:100% 100%; */
+    background-size:100% 100%;
+    }
     body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
