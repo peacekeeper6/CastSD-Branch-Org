@@ -16,6 +16,9 @@ h8 {
     font-size: 25px;
     color: #000000;
 }
+center {
+    overflow:hidden;
+}
 .row {
     justify-content:center
 }
