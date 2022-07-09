@@ -70,7 +70,7 @@ h1 {
     left: 85%;
     width: 420px;
     height: 340px;
-    margin-top: 130rem;
+    margin-top: 50rem;
     transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
     padding: 10px;
     background-color: #ffffff; 
@@ -83,25 +83,13 @@ h1 {
     left: 70%;
     width: 520px;
     height: 450px;
-    margin-top: 110rem;
+    margin-top: 60rem;
     padding: 10px;
     background-color: #ffffff; 
     border-radius: 15px;
     box-shadow: 0px 25px 40px #1687d933;
     transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
-/* #slide-image3 {
-    position: absolute;
-    top: 95%;
-    left: 65%;
-    width: 320px;
-    height: 270px;
-    margin-top: 92rem;
-    padding: 10px;
-    background-color: #ffffff; 
-    border-radius: 15px;
-    box-shadow: 0px 25px 40px #1687d933;
-} */
 p {
     font-size: 140%;
     line-height: 150%;
