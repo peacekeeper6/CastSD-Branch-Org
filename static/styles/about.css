@@ -6,14 +6,51 @@ html {
     height: 100%;
     overflow: hidden;
 }
-@media screen and (max-width: 1000px) and (min-width: 5000px) {
-    .kard {
-        display: flex;
-        flex-wrap: wrap;
+@media only screen and (max-width: 1300px) {
+    .title {
+        min-width: 85%;
+        margin: auto;
+        padding-right: 5rem;
     }
-    #slide-image1, #slide-image2, #slide-image3, #slide-image4 {
-        display: block
+    #slide-image1 {
+        display: none;
+        /* position: absolute;
+        top: 60%;
+        left: 35%;
+        width: 420px;
+        height: 340px;
+        margin-top: 90rem; 
+        transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+        padding: 10px;
+        background-color: #ffffff; 
+        border-radius: 15px;
+        box-shadow: 0px 25px 40px #1687d933; */
+      }
+    #slide-image2 {
+        position: absolute;
+        top: 60%;
+        left: 21%;
+        width: 520px;
+        height: 450px;
+        margin-top: 50rem;
+        padding: 10px;
+        background-color: #ffffff; 
+        border-radius: 15px;
+        box-shadow: 0px 25px 40px #1687d933;
+        transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
     }
+    .break {
+        display: block;
+    }
+}
+.title {
+    width: 40%;
+    padding: 5%;
+    padding-top:5rem;
+    margin: auto; 
+    background-color: #ffffff; 
+    border-radius: 15px;
+    box-shadow: 0px 25px 40px #1687d933;
 }
 body {
             background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
@@ -38,7 +75,9 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-
+.break {
+    display: hidden;
+}
 h1 {
     font-size: 40px;
     text-align: center;
@@ -110,15 +149,6 @@ p {
 .kard {
     min-height: 95%;
     width: 100%;
-}
-.title {
-    width: 40%;
-    padding: 5%;
-    padding-top:5rem;
-    margin: auto; 
-    background-color: #ffffff; 
-    border-radius: 15px;
-    box-shadow: 0px 25px 40px #1687d933;
 }
 .kard:nth-child(2n) .title {
     margin-left: 10%;
