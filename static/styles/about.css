@@ -12,9 +12,9 @@ html {
         margin: auto;
         padding-right: 5rem;
     }
-    /* #slide-image1, #slide-image2, #slide-image3, #slide-image4 {
+     #slide-image1, #slide-image2 {
         visibility: hidden;
-    } */
+    } 
     .break {
         display: block;
     }
