@@ -21,14 +21,14 @@
 {% block body %}
     <body>
         <div>
-            <div class="scroll-text">
+            <div class="scroll-text" style="font-family: 'Poppins', sans-serif">
                 The login and register pages are currently under maintenance. To contact us, refer to the <a href="{{ url_for('contact') }}">Contact Page</a>. To donate, refer to the <a href="{{ url_for('donation') }}">Donation Form</a>.
             </div>
         </div>
-        <h1>Register</h1>
+        <h1 style="font-weight:normal">Register</h1>
 <container>
 <form style="padding-right:5rem; padding-left: 5rem">
-    <h2>Welcome!</h2>
+    <h3>Welcome!</h3>
     <div class="form-row">
         <div class="form-group col-md-6" style="width:50px;">
             <label for="inputName">Name</label>
@@ -59,9 +59,9 @@
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputCity">City
-            <button id="button" style="border-radius: 95%;width:25px">?</button></label>
+            <el><button id="button1" style="border-radius: 95%;width:25px">?</button></el></label>
             <script>
-                $('button').click(function(){
+                $('el').click(function(){
                     $('#Modal').modal('show');
                 });
             </script>
@@ -144,7 +144,7 @@
         </div>
         <div class="form-group col-md-2">
             <label for="inputZip">Zip
-                <button class="hiddenb">?</button>
+                <button class="hiddenb" id="hiddenb">?</button>
             </label>
             <input type="text" class="form-control" id="inputZip">
         </div>

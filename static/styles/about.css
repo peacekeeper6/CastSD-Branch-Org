@@ -6,6 +6,15 @@ html {
     height: 100%;
     overflow: hidden;
 }
+@media screen and (max-width: 1000px) and (min-width: 5000px) {
+    .kard {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #slide-image1, #slide-image2, #slide-image3, #slide-image4 {
+        display: block
+    }
+}
 body {
             background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
             background-repeat: no-repeat;
@@ -36,7 +45,7 @@ h1 {
 }
 #slide-image1 {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 35%;
     width: 420px;
     height: 340px;
@@ -49,8 +58,8 @@ h1 {
   }
 #slide-image2 {
     position: absolute;
-    top: 50%;
-    left: 23%;
+    top: 60%;
+    left: 21%;
     width: 520px;
     height: 450px;
     margin-top: 50rem;
@@ -60,8 +69,37 @@ h1 {
     box-shadow: 0px 25px 40px #1687d933;
     transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
-#slide-image1, #slide-image2 {
-    margin-bottom: 10%
+#slide-image1, #slide-image2, #slide-image3, #slide-image4 {
+    margin-bottom: 10%;
+    display: inline-block;
+}
+#slide-image3 {
+    position: absolute;
+    top: 225%;
+    left: 73%;
+    bottom: 25%;
+    width: 420px;
+    height: 340px;
+    margin-top: 60rem;
+    transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+    padding: 10px;
+    background-color: #ffffff; 
+    border-radius: 15px;
+    box-shadow: 0px 25px 40px #1687d933;
+  }
+#slide-image4 {
+    position: absolute;
+    top: 225%;
+    left: 85%;
+    bottom: 25%;
+    width: 520px;
+    height: 450px;
+    margin-top: 50rem;
+    padding: 10px;
+    background-color: #ffffff; 
+    border-radius: 15px;
+    box-shadow: 0px 25px 40px #1687d933;
+    transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
 p {
     font-size: 140%;
@@ -72,7 +110,6 @@ p {
 .kard {
     min-height: 95%;
     width: 100%;
-    display: inline;
 }
 .title {
     width: 40%;
@@ -95,7 +132,10 @@ p {
 .spacing {
     margin-top: 5%;
 }
-#kard3 {
+#kard3, #kard2 {
     margin-bottom: 15%;
     margin-top: 15%
+}
+#kard4 {
+    margin-bottom: 20%
 }

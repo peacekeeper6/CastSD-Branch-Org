@@ -12,8 +12,6 @@ from flask import render_template
 # create a Flask instance
 app = Flask(__name__)
 
-# this is a test i am not used to vs code
-
 # connects default URL to render index.html
 @app.route('/')
 def index():

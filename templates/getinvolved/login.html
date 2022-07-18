@@ -13,22 +13,21 @@
             background-repeat: no-repeat;
             background-size:100% 100%;
             min-height: 100%;
-      }
+        }
     </style>
 </head>
 {% endblock %}
 {% block body %}
 <body>
-    <wrapper>
     <div>
         <div class="scroll-text">
             The login and register pages are currently under maintenance. To contact us, refer to the <a href="{{ url_for('contact') }}">Contact Page</a>. To donate, refer to the <a href="{{ url_for('donation') }}">Donation Form</a>.
         </div>
     </div>
-    <h1 id="h1padding">Welcome back!</h1>
+    <h1 id="h1padding">Log In</h1>
 <container>
 <center>
-    <h3>Log In</h3>
+    <h3>Welcome back!</h3>
 <div class="form-group">
     <input style="height:3rem" type="email" class="form-control" id="inputEmail" placeholder="Email">
 </div>
@@ -49,7 +48,6 @@
         <a href="{{ url_for('register') }}">Register</a></p> 
 </center>
 </container>
-</wrapper>
 </body>
 {% endblock %}
 </html>
