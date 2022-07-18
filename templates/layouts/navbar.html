@@ -31,8 +31,10 @@
     #hamburger {
         display: none;
     }
+
     @media screen and (max-width: 1000px) {
     #google_translate_element {
+        /* display: none; */
         left: 15%;
         position: absolute
     }
@@ -43,6 +45,16 @@
       width: 4rem;
       height: 4rem;
       margin-left: auto
+    }
+    .fa {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 3.5rem;
+    }
+    #nav-items {
+        display: hidden;
     }
 }
 </style>
@@ -55,7 +67,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>#}
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div id="navs" class="navbar-nav">
+        <div id="nav-items" class="navbar-nav">
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -90,18 +102,20 @@
                 );
             }
         </script>
-        <script>
-            function myFunction() {
-                var x = document.getElementById("navs");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-                }
-        </script>
-    <button onclick="myFunction()" id="hamburger" class="btn btn-outline-primary"><i class="fa fa-bars fa-2x"></i></button>
-
+    <!-- <button href="javascript:void(0);" onclick="myFunction()" id="hamburger" class="btn btn-outline-primary"><i class="fa fa-bars fa-2x"></i></button> -->
+    <a id="hamburger" href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <button class="btn btn-outline-primary"><i class="fa fa-bars fa-3x"></i></button>
+      </a>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav-items");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            }
+    </script>
         <script type="text/javascript" src=
                 "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
         </script>
