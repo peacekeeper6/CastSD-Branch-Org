@@ -6,6 +6,15 @@ html {
     height: 100%;
     overflow: hidden;
 }
+@media screen and (max-width: 1000px) and (min-width: 5000px) {
+    .kard {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #slide-image1, #slide-image2, #slide-image3, #slide-image4 {
+        display: block
+    }
+}
 body {
             background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
             background-repeat: no-repeat;
@@ -101,7 +110,6 @@ p {
 .kard {
     min-height: 95%;
     width: 100%;
-    display: inline-block;
 }
 .title {
     width: 40%;
