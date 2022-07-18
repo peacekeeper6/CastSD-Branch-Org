@@ -28,6 +28,23 @@
         transform: translateY(0px);
         z-index:999
     }
+    #hamburger {
+        display: none;
+    }
+    @media screen and (max-width: 1000px) {
+    #google_translate_element {
+        left: 15%;
+        position: absolute
+    }
+    #hamburger {
+      display: block;
+      padding: 5px 5px;
+      position: relative;
+      width: 4rem;
+      height: 4rem;
+      margin-left: auto
+    }
+}
 </style>
 <nav class="navbar navbar-expand-lg navbar-light bg-* sticky" id="navbar" style="font-family: 'Poppins', sans-serif">
     <div class="container-fluid">
@@ -37,9 +54,8 @@
     {#<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>#}
-
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+        <div id="navs" class="navbar-nav">
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -74,6 +90,17 @@
                 );
             }
         </script>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("navs");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                }
+        </script>
+    <button onclick="myFunction()" id="hamburger" class="btn btn-outline-primary"><i class="fa fa-bars fa-2x"></i></button>
 
         <script type="text/javascript" src=
                 "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">

@@ -7,8 +7,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
 <script src="{{ url_for('static', filename='script/index.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
     <title>Project ELIMIN8</title>
-    <style>
+<style>
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
+            overflow-y: scroll;
+        }
         .bgimg-1 {
             /* background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
             animation: gradient 10s ease infinite;
@@ -28,7 +36,8 @@
             background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
             background-repeat: no-repeat;
             background-size:100% 100%;
-            min-height: 100%;
+            min-height: 1000px;
+            margin-top: -5rem;
         }
         .bgimg-3 {
             background-image: url({{ url_for('static', filename='assets/defininglelimin8pt2.png') }});
@@ -49,13 +58,13 @@
             min-height: 900px;
             opacity: 0.8
         }
-        .arrow{
+        /* .arrow{
             display: inline-block;
             border: solid #FCA101;
             border-width: 0 3px 3px 0;
             padding: 3px;
             transform:rotate(-135deg);
-        }
+        } */
         h7 {
             margin-bottom: 5%;
             color:black;
@@ -66,13 +75,91 @@
         .footer-white {
             border-top-style: hidden !important
         }
+        #navbar {
+            background-color: transparent !important
+        }
+        #header1, #header2 {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            z-index: 999;
+        }
+        #headerbtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #header1 {
+            font-size: 80px;
+            padding-top: 8rem;
+            padding-left: 5%
+        }
+        #header2{
+            font-size: 30px;
+        }
+        /* .leaf-1 {
+            float: left;
+            width: 50px;
+            height: 50px;
+            border-radius: 0 100px;
+            background-color: #64cef8;
+            transform: rotate(0deg);
+        }
+        .leaf-2 {
+            float: left;
+            width: 50px;
+            height: 50px;
+            border-radius: 0 100px;
+            background-color: #64cef8;
+            transform: rotate(90deg);
+        } */
+        .leaf-3 {
+            float: right;
+            width: 50px;
+            height: 50px;
+            border-radius: 0 100px;
+            background-color: #64cef8;
+            transform: rotate(0deg);
+        }
+        .leaf-4 {
+            float: right;
+            width: 50px;
+            height: 50px;
+            border-radius: 0 100px;
+            background-color: #64cef8;
+            transform: rotate(90deg);
+        }
+        .headercontainer {
+            margin: auto;
+            width: 80rem;
+            height: 30rem;
+            background-color: #ffffff; 
+            border-radius: 15px;
+            box-shadow: 0px 25px 40px #1687d933;
+        } 
+        #bottom { 
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            display: flex;
+        }
+        #headerbtn {
+            width: 15rem;
+            height: 5rem;
+            font-size: 24px;
+            margin: 0;
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
     </style>
 {% endblock %}
 
 {% block body %}
     <body style="font-family: 'Poppins', sans-serif">
     </div>
-    <div class="bgimg-1" style="position:relative">
+    <div class="bgimg-1" style="position:relative;">
         <div class="flex-parent hero-desktop">
             <div class="flex-child _40 hero-padding">
                 <div class="child-div">
@@ -82,9 +169,6 @@
                 </div>
             </div>
         </div>
-        <!-- <h1 style="visibility:hidden;padding-left:300px;font-size:100px">
-            Placeholder Element
-        </h1> -->
         </div>
     <div style="color: #000000;background-color:#ffffff;text-align:center;padding:50px 80px;text-align: justify;">
         <p>Since its conception, Project ELIMIN8 has been dedicated to preservation and giving back to the community.</p>
@@ -126,14 +210,55 @@
             <p>Our Vision: To eliminate food wastage and starvation in our local communities. </p>
         </div>
         </div>
-    <div class="bgimg-3">
+    <div>
+            <article class="Venn">
+              <div class="circle one">
+                <span></span>
+                <span></span>
+                <h3><b>Our Vision</b></h3>
+                <p>
+                    To eliminate food wastage and starvation in our local communities.             
+                </p>
+              </div>
+              <div class="circle two">
+                <span></span>
+                <span></span>
+                <h3><b>Our Mission</b></h3>
+                <p>
+                    To collect surplus food items that restaurants and businesses can no longer sell and distribute them to local food banks, homeless shelters, schools, and other organizations in need.                    
+                </p>
+              </div>
+              <div class="circle three">
+                <span></span>
+                <span></span>
+                <h3><b>Our Values</b></h3>
+                <p>
+                    <p>- Resourcefulness</p>
+                    <p>- Empathy</p>
+                    <p>- Passion</p>
+                    <p>- Reliability</p>
+                    <p>- Integrity</p>          
+                </p>
+              </div>
     </div>
     <div style="position:relative;">
     <div style="color: #000000;background-color:#ffffff;text-align:center;padding:50px 80px;text-align: justify;">
         <p>Our Mission: To collect surplus food items that restaurants and businesses can no longer sell and distribute them to local food banks, homeless shelters, schools, and other organizations in need.</p>
     </div>
     </div>
-<div class="bgimg-4"></div>
-<!-- <button class="btn btn-light" onclick="scrollToTop()"><div class="arrow"></div>To Top</button> -->
+<div id="bottom" class="bgimg-2">
+    <div class="headercontainer">
+    <div class="leaf-3"></div>
+    <div class="leaf-4"></div>
+    <p id="header1">Why Wait?</p>
+    <p id="header2">Join now!</p> 
+    <a href="{{ url_for('register') }}">
+    <button class="btn btn-outline-primary" id="headerbtn">
+        Let's Go!</button>
+    </a>
+    <div class="leaf-1"></div>
+    <div class="leaf-2"></div>
+    </div>
+</div>
     </body>
 {% endblock %}
