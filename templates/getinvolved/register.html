@@ -59,9 +59,9 @@
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputCity">City
-            <button id="button" style="border-radius: 95%;width:25px">?</button></label>
+            <el><button id="button1" style="border-radius: 95%;width:25px">?</button></el></label>
             <script>
-                $('button').click(function(){
+                $('el').click(function(){
                     $('#Modal').modal('show');
                 });
             </script>
@@ -144,7 +144,7 @@
         </div>
         <div class="form-group col-md-2">
             <label for="inputZip">Zip
-                <button class="hiddenb">?</button>
+                <button class="hiddenb" id="hiddenb">?</button>
             </label>
             <input type="text" class="form-control" id="inputZip">
         </div>
