@@ -1,159 +1,291 @@
-        html {
-            height: 100%;
-            overflow: hidden;
+html {
+    height: 100%;
+    overflow: hidden;
+}
+.d-block {
+    box-shadow: 0px 25px 40px #1687d933;
+    border-radius: 15px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+.bgimg-1 {
+    /* background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+}
+    @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+    /* background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    min-height: 1000px;
+    margin-top: -5rem; */
+}
+.bgimg-3 {
+    background-image: url({{ url_for('static', filename='assets/defininglelimin8pt2.png') }});
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    min-height: 700px;
+}
+.bgimg-2 {
+    background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    max-height: 800px;
+}
+.bgimg-4 {
+    background-image: url({{ url_for('static', filename='assets/infographic.png') }});
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    min-height: 900px;
+    opacity: 0.8
+}
+/* .arrow{
+    display: inline-block;
+    border: solid #FCA101;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    transform:rotate(-135deg);
+} */
+h7 {
+    margin-bottom: 5%;
+    color:black;
+    padding-left:15%;
+    font-size:95px;
+    font-family: 'Joan', serif;
         }
-        body {
-            overflow-y: scroll;
-        }
-        .bgimg-1 {
-            /* background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
-            animation: gradient 10s ease infinite;
-            height: 100vh;
-        }
-            @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        } */
-            background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
-            background-repeat: no-repeat;
-            background-size:100% 100%;
-            min-height: 1000px;
-            margin-top: -5rem;
-        }
-        .bgimg-3 {
-            background-image: url({{ url_for('static', filename='assets/defininglelimin8pt2.png') }});
-            background-repeat: no-repeat;
-            background-size:100% 100%;
-            min-height: 700px;
-        }
-        .bgimg-2 {
-            background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
-            background-repeat: no-repeat;
-            background-size:100% 100%;
-            max-height: 800px;
-        }
-        .bgimg-4 {
-            background-image: url({{ url_for('static', filename='assets/infographic.png') }});
-            background-repeat: no-repeat;
-            background-size:100% 100%;
-            min-height: 900px;
-            opacity: 0.8
-        }
-        /* .arrow{
-            display: inline-block;
-            border: solid #FCA101;
-            border-width: 0 3px 3px 0;
-            padding: 3px;
-            transform:rotate(-135deg);
-        } */
-        h7 {
-            margin-bottom: 5%;
-            color:black;
-            padding-left:15%;
-            font-size:95px;
-            font-family: 'Joan', serif;
-                }
-        .footer-white {
-            border-top-style: hidden !important
-        }
-        #navbar {
-            background-color: transparent !important
-        }
-        #header1, #header2 {
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            z-index: 999;
-        }
-        #headerbtn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #header1 {
-            font-size: 80px;
-            padding-top: 8rem;
-        }
-        #header2{
-            font-size: 30px;
-        }
-        /* .leaf-1 {
-            float: left;
-            width: 50px;
-            height: 50px;
-            border-radius: 0 100px;
-            background-color: #64cef8;
-            transform: rotate(0deg);
-        }
-        .leaf-2 {
-            float: left;
-            width: 50px;
-            height: 50px;
-            border-radius: 0 100px;
-            background-color: #64cef8;
-            transform: rotate(90deg);
-        } */
-        .leaf-3 {
-            float: right;
-            width: 50px;
-            height: 50px;
-            border-radius: 0 100px;
-            background-color: #64cef8;
-            transform: rotate(0deg);
-        }
-        .leaf-4 {
-            float: right;
-            width: 50px;
-            height: 50px;
-            border-radius: 0 100px;
-            background-color: #64cef8;
-            transform: rotate(90deg);
-        }
-        .square {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            border-radius:25px/50px;
-        }
-        .square {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            border-radius:25px 70px 30px 50px; 
-        }
-        .headercontainer {
-            margin: auto;
-            width: 80rem;
-            height: 30rem;
-            background-color: #ffffff; 
-            border-radius: 15px;
-            box-shadow: 0px 25px 40px #1687d933;
-        } 
-        #bottom { 
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-            display: flex;
-        }
-        #headerbtn {
-            width: 15rem;
-            height: 5rem;
-            font-size: 24px;
-            margin: 0;
-            position: absolute;
-            top: 75%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
+.footer-white {
+    border-top-style: hidden !important
+}
+#navbar {
+    background-color: transparent !important
+}
+#header1, #header2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 999;
+    color: black
+}
+@media only screen and (max-width: 1000px) {
+#header1 {
+    font-size: 10vw !important;
+    padding-top: 8rem;
+    padding-left: 20vw !important
+}
+#header2{
+    font-size: 5vw;
+}
+}
+#header1 {
+    font-size: 80px;
+    padding-top: 8rem;
+    margin: 0 auto;
+    padding-left: 9%;
+}
+#header2{
+    font-size: 30px;
+}
+/* .leaf-1 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 0 100px;
+    background-color: #64cef8;
+    transform: rotate(0deg);
+}
+.leaf-2 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 0 100px;
+    background-color: #64cef8;
+    transform: rotate(90deg);
+} */
+.leaf-3 {
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 0 100px;
+    background-color: #64cef8;
+    transform: rotate(0deg);
+}
+.leaf-4 {
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 0 100px;
+    background-color: #64cef8;
+    transform: rotate(90deg);
+}
+.headercontainer {
+    margin: auto;
+    width: 80rem;
+    height: 30rem;
+    background-color: #ffffff; 
+    border-radius: 15px;
+    box-shadow: 0px 25px 40px #1687d933;
+} 
+#bottom { 
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: flex;
+    text-align: center;
+}
+#headerbtn {
+    width: 15rem;
+    height: 5rem;
+    font-size: 24px;
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+@keyframes words {
+0% {content: "D";}
+5% {content: "De";}
+15% {content: "Ded";}
+22% {content: "Dedi";}
+29% {content: "Dedic";}
+36% {content: "Dedica";}
+44% {content: "Dedicat";}
+51% {content: "Dedicate";}
+59% {content: "Dedicated";}
+64% {content: "Dedicated ";}
+72% {content: "Dedicated t";}
+81% {content: "Dedicated to";}
+87% {content: "Dedicated to ";}
+100% {content: "Dedicated to ";}
+}
+@keyframes changeLetter {
+0% {content: "";}
+2.5% {content: "p";}
+5% {content: "pr";}
+7.5% {content: "pre";}
+10% {content: "pres ";}
+12.5% {content: "prese";}
+15% {content: "preser";}
+17.5% {content: "preserv";}
+20% {content: "preserva";}
+22.5% {content: "preservat";} 
+25% {content: "preservati";} 
+27.5% {content: "preservatio";} 
+30% {content: "preservation";} 
+32.5% {content: "preservation.";} 
+33.5% {content: "preservation";} 
+34.5% {content: "preservatio";} 
+35.5% {content: "preservati";} 
+36.5% {content: "preservat";} 
+36.5% {content: "preserva";} 
+37.5% {content: "preserv";} 
+38.5% {content: "preser";} 
+39.5% {content: "prese";} 
+40.5% {content: "pres";} 
+41.5% {content: "pre";} 
+42.5% {content: "pr";} 
+43.5% {content: "p";} 
+43.5% {content: "";}  
+46% {content: "c";}  
+48.5% {content: "co";}  
+51% {content: "com";}  
+53.5% {content: "comm";}  
+56% {content: "commu";}  
+58.5% {content: "commun";}  
+61% {content: "communi";}  
+63.5% {content: "communit";}  
+66% {content: "community";}  
+68.5% {content: "community.";}  
+69.5% {content: "community";}  
+70.5% {content: "communit";}  
+71.5% {content: "communi";}  
+71.5% {content: "commun";}  
+72.5% {content: "commu";}  
+73.5% {content: "comm";}  
+74.5% {content: "com";}  
+75.7% {content: "co";}  
+76.5% {content: "c";}  
+76.5% {content: "";}  
+79% {content: "e";} 
+81.5% {content: "ev";} 
+84% {content: "eve";} 
+86.5% {content: "ever";} 
+89% {content: "every";} 
+91.5% {content: "everyb";} 
+94% {content: "everybo";} 
+96.5% {content: "everybod";} 
+99% {content: "everybody";} 
+100% {content: "everybody.";} 
+100% {content: "everybody.";} 
+}
+@keyframes cursor {
+0% {content: "";}
+50% {content: "|";}
+100% {content: "";}
+}
+.words::before {
+animation: words 1s linear 0s 1 normal forwards;
+content: "";
+}
+.letter-changer::before {
+animation: changeLetter 3s linear 1s 1 normal forwards;
+content: "";
+}
+.letter-changer::after {
+animation: cursor 0.6s linear 2.2s 1 normal forwards, cursor 0.6s linear 4s 3 normal forwards;
+content: "|";
+}
+.accessibility {
+width: 0; 
+display: inline-block; 
+overflow: hidden; 
+white-space:nowrap;
+}
+.spacy {
+visibility: hidden;
+display: flex
+}
+.ltitle {
+margin-bottom: 5%;
+color:black;
+padding-left:15%;
+font-size:7vw
+}
+.lsubtitle {
+margin-bottom: 5%;
+color:black;
+padding-left:15%;
+font-size:3vw;
+padding-bottom:5rem
+}
+#ljoin {
+width: 10rem;
+height:4rem;
+font-size:1.5rem
+}
+.definingelimin8 {
+    width: 100%;
+    height: 100%;
+    display: none
+}
+.carousel {
+    padding-top: 25rem;
+    padding-bottom: 25rem
+}
                 main {
-        width: calc(100% * var(--venn-width-mult));
+        width: calc(50% * var(--venn-width-mult));
         margin: 0 auto;
         }
 
@@ -167,62 +299,93 @@
         }
         }
 
-        @media (min-width: 800px) {
-        .Venn::after {
-            content: "";
-            display: block;
-            width: 1px;
-            height: 1px;
-            clear: both;
-        }
+            @media only screen and (max-width: 1000px) {
+                .circle {
+                    display: none
+                }
+                .Venn {
+                    display: none
+                }
+                #bottom {
+                    padding-top: -20%;;
+                    margin-top: 0
+                }
+                .definingelimin8 {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    margin-bottom: 0;
+                    padding-bottom: 0
+                }
+            .Venn::after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 1px;
+                clear: both;
+            }
+            .Venn .circle h3 {
+                font-size: 2.5vw !important;
+                margin: 0.5em 0 0 0;
+                text-align: center;
+            }
+            .Venn > div {
+                box-sizing: border-box;
+                border: 0.1em solid rgba(0, 0, 0, 0.5);
+                font-size: calc(2.3vw * var(--venn-width-mult)) !important;
+                /* font-size: calc(1.5vw * var(--venn-width-mult)); */
+                line-height: 1.3;
+                overflow: wrap;
+            }
 
-        .circle,
-        .shape {
-            box-sizing: border-box;
-            border: 0.1em solid rgba(0, 0, 0, 0.5);
-            margin: 0 0.75%;
-            padding: 0 1.5em;
-            float: left;
-            width: 32%;
-        }
+            .circle,
+            .shape {
+                box-sizing: border-box;
+                /* border: 0.1em solid rgba(0, 0, 0, 0.5); */
+                box-shadow: 0px 25px 40px #1687d933;
+                margin: 0 0.75%;
+                padding: 0 1.5em;
+                float: left;
+                width: 10%;
+            }
 
-        .circle.one {
-            margin-left: 0;
-        }
+            .circle.one {
+                margin-left: 0;
+            }
 
-        .circle.three {
-            margin-right: 0;
-        }
+            .circle.three {
+                margin-right: 0;
+            }
 
-        .shape {
-            width: 30%;
-            margin: 1em 1%;
-        }
+            .shape {
+                width: 30%;
+                margin: 1em 1%;
+            }
 
-        .shape.onetwo {
-            margin-left: 2.5%;
-            clear: left;
-            border-top-right-radius: 1em;
-        }
+            .shape.onetwo {
+                margin-left: 2.5%;
+                clear: left;
+                border-top-right-radius: 1em;
+            }
 
-        .shape.twothree {
-            margin-right: 2.5%;
-            border-top-left-radius: 1em;
-        }
+            .shape.twothree {
+                margin-right: 2.5%;
+                border-top-left-radius: 1em;
+            }
 
-        .shape.onethree {
-            margin-top: 3em;
-            border-top-right-radius: 1em;
-            border-top-left-radius: 1em;
-        }
+            .shape.onethree {
+                margin-top: 3em;
+                border-top-right-radius: 1em;
+                border-top-left-radius: 1em;
+            }
 
-        .shape.onetwothree {
-            clear: both;
-            width: 40%;
-            margin-left: 30%;
-            margin-right: 30%;
-            border-radius: 1.5em;
-        }
+            .shape.onetwothree {
+                clear: both;
+                width: 40%;
+                margin-left: 30%;
+                margin-right: 30%;
+                border-radius: 1.5em;
+            }
         }
 
         @supports (shape-outside: polygon(0 0, 0 50%, 50% 50%)) {
@@ -233,9 +396,9 @@
         .Venn > div {
             box-sizing: border-box;
             border: 0.1em solid rgba(0, 0, 0, 0.5);
-            font-size: calc(2.5vw * var(--venn-width-mult));
+            font-size: calc(2.8vw * var(--venn-width-mult));
             line-height: 1.3;
-            overflow: hidden;
+            overflow: wrap;
         }
 
         .Venn > .shape {
@@ -247,7 +410,7 @@
         }
 
         .Venn > .circle {
-            border-radius: 50%;
+            border-radius: 70%;
             width: initial;
             margin: initial;
             padding: initial;
@@ -341,6 +504,12 @@
         .Venn .circle > span {
             width: calc(58.5vw * var(--venn-width-mult));
             height: calc(58.5vw * var(--venn-width-mult));
+            /* overflow-x: wrap;
+            overflow-y: wrap */
+        }
+        .Venn .three > span {
+            width: calc(58.5vw * var(--venn-width-mult));
+            height: calc(15vw * var(--venn-width-mult));
         }
         .Venn .shape > span {
             height: calc(10vw * var(--venn-width-mult));
@@ -598,7 +767,7 @@
             );
         }
         .Venn .circle h3 {
-            font-size: 60px;
+            font-size: 2.25vw;
             margin: 0.5em 0 0 0;
             text-align: center;
         }
