@@ -12,7 +12,7 @@ html {
         margin: auto;
         padding-right: 5rem;
     }
-     #slide-image1, #slide-image2 {
+     #slide-image1, #slide-image2, #slide-image3, #slide-image4 {
         visibility: hidden;
     } 
     .break {
