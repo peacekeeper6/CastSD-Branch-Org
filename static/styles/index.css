@@ -275,6 +275,11 @@ width: 10rem;
 height:4rem;
 font-size:1.5rem
 }
+.definingelimin8 {
+    width: 100%;
+    height: 100%;
+    display: none
+}
                 main {
         width: calc(50% * var(--venn-width-mult));
         margin: 0 auto;
@@ -291,6 +296,14 @@ font-size:1.5rem
         }
 
             @media only screen and (max-width: 1000px) {
+                .circle {
+                    display: none
+                }
+                .definingelimin8 {
+                    width: 100%;
+                    height: 100%;
+                    display: block
+                }
             .Venn::after {
                 content: "";
                 display: block;
@@ -308,7 +321,8 @@ font-size:1.5rem
                 border: 0.1em solid rgba(0, 0, 0, 0.5);
                 font-size: calc(2.3vw * var(--venn-width-mult)) !important;
                 /* font-size: calc(1.5vw * var(--venn-width-mult)); */
-                line-height: 0 !important;
+                line-height: 1.3;
+                overflow: wrap;
             }
 
             .circle,
