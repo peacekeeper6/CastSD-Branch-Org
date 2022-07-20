@@ -308,7 +308,7 @@ font-size:1.5rem
                 border: 0.1em solid rgba(0, 0, 0, 0.5);
                 font-size: calc(2.3vw * var(--venn-width-mult)) !important;
                 /* font-size: calc(1.5vw * var(--venn-width-mult)); */
-                line-height: 0;
+                line-height: 0 !important;
             }
 
             .circle,
