@@ -10,176 +10,50 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
     <title>Project ELIMIN8</title>
 <style>
-        html {
-            height: 100%;
-            overflow: hidden;
-        }
-        body {
-            overflow-y: scroll;
-        }
-        .bgimg-1 {
-            /* background: linear-gradient(-45deg, #ffffff, #ffffff,#e7ffff,#ffffff);
-            animation: gradient 10s ease infinite;
-            height: 100vh;
-        }
-            @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        } */
-            background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
-            background-repeat: no-repeat;
-            background-size:100% 100%;
-            min-height: 1000px;
-            margin-top: -5rem;
-        }
-        .bgimg-3 {
-            background-image: url({{ url_for('static', filename='assets/defininglelimin8pt2.png') }});
-            background-repeat: no-repeat;
-            background-size:100% 100%;
-            min-height: 700px;
-        }
-        .bgimg-2 {
-            background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
-            background-repeat: no-repeat;
-            background-size:100% 100%;
-            max-height: 800px;
-        }
-        .bgimg-4 {
-            background-image: url({{ url_for('static', filename='assets/infographic.png') }});
-            background-repeat: no-repeat;
-            background-size:100% 100%;
-            min-height: 900px;
-            opacity: 0.8
-        }
-        /* .arrow{
-            display: inline-block;
-            border: solid #FCA101;
-            border-width: 0 3px 3px 0;
-            padding: 3px;
-            transform:rotate(-135deg);
-        } */
-        h7 {
-            margin-bottom: 5%;
-            color:black;
-            padding-left:15%;
-            font-size:95px;
-            font-family: 'Joan', serif;
-                }
-        .footer-white {
-            border-top-style: hidden !important
-        }
-        #navbar {
-            background-color: transparent !important
-        }
-        #header1, #header2 {
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            z-index: 999;
-        }
-        #headerbtn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #header1 {
-            font-size: 80px;
-            padding-top: 8rem;
-            padding-left: 5%
-        }
-        #header2{
-            font-size: 30px;
-        }
-        /* .leaf-1 {
-            float: left;
-            width: 50px;
-            height: 50px;
-            border-radius: 0 100px;
-            background-color: #64cef8;
-            transform: rotate(0deg);
-        }
-        .leaf-2 {
-            float: left;
-            width: 50px;
-            height: 50px;
-            border-radius: 0 100px;
-            background-color: #64cef8;
-            transform: rotate(90deg);
-        } */
-        .leaf-3 {
-            float: right;
-            width: 50px;
-            height: 50px;
-            border-radius: 0 100px;
-            background-color: #64cef8;
-            transform: rotate(0deg);
-        }
-        .leaf-4 {
-            float: right;
-            width: 50px;
-            height: 50px;
-            border-radius: 0 100px;
-            background-color: #64cef8;
-            transform: rotate(90deg);
-        }
-        .headercontainer {
-            margin: auto;
-            width: 80rem;
-            height: 30rem;
-            background-color: #ffffff; 
-            border-radius: 15px;
-            box-shadow: 0px 25px 40px #1687d933;
-        } 
-        #bottom { 
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-            display: flex;
-        }
-        #headerbtn {
-            width: 15rem;
-            height: 5rem;
-            font-size: 24px;
-            margin: 0;
-            position: absolute;
-            top: 75%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
+    body {
+    overflow-y: scroll;
+    color: black;
+    background-image: url({{ url_for('static', filename='assets/banner_bg2.png') }});
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    min-height: 1000px;
+    margin-top: -5rem;
+}
     </style>
 {% endblock %}
 
 {% block body %}
     <body style="font-family: 'Poppins', sans-serif">
     </div>
-    <div class="bgimg-1" style="position:relative;">
+    <div style="position:relative;">
         <div class="flex-parent hero-desktop">
             <div class="flex-child _40 hero-padding">
                 <div class="child-div">
-                    <h7 style="margin-bottom: 5%;color:black;padding-left:15%;font-size:95px">
+                    <h8 class="spacy" style="margin-bottom: 5%;color:black;padding-left:15%;font-size:6vw">
                         Project ELIMIN8
-                    </h7>
+                    </h8>
+                    <h8 class="spacy" style="margin-bottom: 5%;color:black;padding-left:15%;font-size:6vw">
+                        Project ELIMIN8
+                    </h8>
+                    <h8 class="ltitle">
+                        Project ELIMIN8
+                    </h8>
+                    
+                    <p class="lsubtitle"><span class="words"></span><span class="letter-changer"></span><span class="accessibility">Dedicated to<s>preservation.</s>community.</span></p>
                 </div>
             </div>
         </div>
         </div>
-    <div style="color: #000000;background-color:#ffffff;text-align:center;padding:50px 80px;text-align: justify;">
+    <!-- <div style="color: #000000;background-color:#ffffff;text-align:center;padding:50px 80px;text-align: justify;">
         <p>Since its conception, Project ELIMIN8 has been dedicated to preservation and giving back to the community.</p>
-    </div>
-    <div class="bgimg-2">
+    </div> -->
+    <div>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" hidden></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" hidden></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2" hidden></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3" hidden></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -195,23 +69,26 @@
                     <img class="d-block" height="700px" width="100%" src="/static/assets/placehdoler.PNG" alt="Fourth slide">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="background-color: rgba(0, 0, 0, 0.50)">
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="background-color: transparent">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="background-color: rgba(0, 0, 0, 0.50)">
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="background-color: transparent">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+            <h8 class="spacy" style="margin-bottom: 5%;color:black;padding-left:15%;font-size:6vw">
+                Project ELIMIN8
+            </h8>
         </div>
     </div>
     <div style="position:relative;">
-        <div style="color:#000000;background-color:#ffffff;text-align:center;padding:50px 80px;text-align: justify;">
+        <!-- <div style="color:#000000;background-color:#ffffff;text-align:center;padding:50px 80px;text-align: justify;">
             <p>Our Vision: To eliminate food wastage and starvation in our local communities. </p>
-        </div>
+        </div> -->
         </div>
     <div>
-            <article class="Venn">
+            <article class="Venn" style="z-index:999">
               <div class="circle one">
                 <span></span>
                 <span></span>
@@ -233,6 +110,7 @@
                 <span></span>
                 <h3><b>Our Values</b></h3>
                 <p>
+                    <br>
                     <p>- Resourcefulness</p>
                     <p>- Empathy</p>
                     <p>- Passion</p>
@@ -242,18 +120,18 @@
               </div>
     </div>
     <div style="position:relative;">
-    <div style="color: #000000;background-color:#ffffff;text-align:center;padding:50px 80px;text-align: justify;">
+    <!-- <div style="color: #000000;background-color:#ffffff;text-align:center;padding:50px 80px;text-align: justify;">
         <p>Our Mission: To collect surplus food items that restaurants and businesses can no longer sell and distribute them to local food banks, homeless shelters, schools, and other organizations in need.</p>
+    </div> -->
     </div>
-    </div>
-<div id="bottom" class="bgimg-2">
+<div id="bottom">
     <div class="headercontainer">
     <div class="leaf-3"></div>
     <div class="leaf-4"></div>
     <p id="header1">Why Wait?</p>
     <p id="header2">Join now!</p> 
     <a href="{{ url_for('register') }}">
-    <button class="btn btn-outline-primary" id="headerbtn">
+    <button class="btn btn-outline-primary" id="ljoin">
         Let's Go!</button>
     </a>
     <div class="leaf-1"></div>
