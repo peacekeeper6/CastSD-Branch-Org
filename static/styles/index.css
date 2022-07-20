@@ -478,6 +478,8 @@ font-size:1.5rem
         .Venn .circle > span {
             width: calc(58.5vw * var(--venn-width-mult));
             height: calc(58.5vw * var(--venn-width-mult));
+            overflow-x: wrap;
+            overflow-y: wrap
         }
         .Venn .three > span {
             width: calc(58.5vw * var(--venn-width-mult));
