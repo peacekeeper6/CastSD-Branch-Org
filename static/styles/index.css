@@ -309,7 +309,6 @@ font-size:1.5rem
                 font-size: calc(2.3vw * var(--venn-width-mult)) !important;
                 /* font-size: calc(1.5vw * var(--venn-width-mult)); */
                 line-height: 0;
-                overflow: wrap;
             }
 
             .circle,
