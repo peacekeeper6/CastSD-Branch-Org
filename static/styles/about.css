@@ -62,8 +62,10 @@ h1 {
     position: absolute;
     top: 60%;
     left: 35%;
-    width: 420px;
-    height: 340px;
+    /* width: 420px;
+    height: 340px; */
+    width: 520px;
+    height: 440px;
     margin-top: 60rem;
     transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
     padding: 10px;
@@ -75,8 +77,10 @@ h1 {
     position: absolute;
     top: 60%;
     left: 21%;
-    width: 520px;
-    height: 450px;
+    /* width: 520px;
+    height: 450px; */
+    width: 620px;
+    height: 550px;
     margin-top: 50rem;
     padding: 10px;
     background-color: #ffffff; 
@@ -93,8 +97,10 @@ h1 {
     top: 225%;
     left: 73%;
     bottom: 25%;
-    width: 420px;
-    height: 340px;
+    /* width: 420px;
+    height: 340px; */
+    width: 520px;
+    height: 440px;
     margin-top: 60rem;
     transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
     padding: 10px;
@@ -107,8 +113,10 @@ h1 {
     top: 225%;
     left: 85%;
     bottom: 25%;
-    width: 520px;
-    height: 450px;
+    /* width: 520px;
+    height: 450px; */
+    width: 620px;
+    height: 550px;
     margin-top: 50rem;
     padding: 10px;
     background-color: #ffffff; 

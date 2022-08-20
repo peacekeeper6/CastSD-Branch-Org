@@ -38,14 +38,9 @@ def getinvolved():
     return render_template("getinvolved/getinvolved.html")
 
 
-@app.route('/login/')
-def login():
-    return render_template("getinvolved/login.html")
-
-
 @app.route('/register')
 def register():
-    return render_template("getinvolved/register.html")
+    return render_template("register.html")
 
 
 @app.route('/donation/')
