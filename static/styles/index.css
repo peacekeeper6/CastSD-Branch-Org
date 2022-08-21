@@ -318,6 +318,171 @@ h7 {
     100% {content: "";}
     }
 
+    @keyframes words {
+        0% {content: "D";}
+        5% {content: "De";}
+        15% {content: "Ded";}
+        22% {content: "Dedi";}
+        29% {content: "Dedic";}
+        36% {content: "Dedica";}
+        44% {content: "Dedicat";}
+        51% {content: "Dedicate";}
+        59% {content: "Dedicated";}
+        64% {content: "Dedicated ";}
+        72% {content: "Dedicated t";}
+        81% {content: "Dedicated to";}
+        87% {content: "Dedicated to ";}
+        100% {content: "Dedicated to ";}
+        }
+        @keyframes changeLetter {
+        0% {content: "";}
+        2.5% {content: "p";}
+        5% {content: "pr";}
+        7.5% {content: "pre";}
+        10% {content: "pres ";}
+        12.5% {content: "prese";}
+        15% {content: "preser";}
+        17.5% {content: "preserv";}
+        20% {content: "preserva";}
+        22.5% {content: "preservat";} 
+        25% {content: "preservati";} 
+        27.5% {content: "preservatio";} 
+        30% {content: "preservation";} 
+        32.5% {content: "preservation.";} 
+        33.5% {content: "preservation";} 
+        34.5% {content: "preservatio";} 
+        35.5% {content: "preservati";} 
+        36.5% {content: "preservat";} 
+        36.5% {content: "preserva";} 
+        37.5% {content: "preserv";} 
+        38.5% {content: "preser";} 
+        39.5% {content: "prese";} 
+        40.5% {content: "pres";} 
+        41.5% {content: "pre";} 
+        42.5% {content: "pr";} 
+        43.5% {content: "p";} 
+        43.5% {content: "";}  
+        46% {content: "c";}  
+        48.5% {content: "co";}  
+        51% {content: "com";}  
+        53.5% {content: "comm";}  
+        56% {content: "commu";}  
+        58.5% {content: "commun";}  
+        61% {content: "communi";}  
+        63.5% {content: "communit";}  
+        66% {content: "community";}  
+        68.5% {content: "community.";}  
+        69.5% {content: "community";}  
+        70.5% {content: "communit";}  
+        71.5% {content: "communi";}  
+        71.5% {content: "commun";}  
+        72.5% {content: "commu";}  
+        73.5% {content: "comm";}  
+        74.5% {content: "com";}  
+        75.7% {content: "co";}  
+        76.5% {content: "c";}  
+        76.5% {content: "";}  
+        79% {content: "e";} 
+        81.5% {content: "ev";} 
+        84% {content: "eve";} 
+        86.5% {content: "ever";} 
+        89% {content: "every";} 
+        91.5% {content: "everyb";} 
+        94% {content: "everybo";} 
+        96.5% {content: "everybod";} 
+        99% {content: "everybody";} 
+        100% {content: "everybody.";} 
+        100% {content: "everybody.";} 
+        }
+        @keyframes cursor {
+        0% {content: "";}
+        50% {content: "|";}
+        100% {content: "";}
+        }
+        
+        @keyframes words {
+            0% {content: "D";}
+            5% {content: "De";}
+            15% {content: "Ded";}
+            22% {content: "Dedi";}
+            29% {content: "Dedic";}
+            36% {content: "Dedica";}
+            44% {content: "Dedicat";}
+            51% {content: "Dedicate";}
+            59% {content: "Dedicated";}
+            64% {content: "Dedicated ";}
+            72% {content: "Dedicated t";}
+            81% {content: "Dedicated to";}
+            87% {content: "Dedicated to ";}
+            100% {content: "Dedicated to ";}
+            }
+            @keyframes changeLetter {
+            0% {content: "";}
+            2.5% {content: "p";}
+            5% {content: "pr";}
+            7.5% {content: "pre";}
+            10% {content: "pres ";}
+            12.5% {content: "prese";}
+            15% {content: "preser";}
+            17.5% {content: "preserv";}
+            20% {content: "preserva";}
+            22.5% {content: "preservat";} 
+            25% {content: "preservati";} 
+            27.5% {content: "preservatio";} 
+            30% {content: "preservation";} 
+            32.5% {content: "preservation.";} 
+            33.5% {content: "preservation";} 
+            34.5% {content: "preservatio";} 
+            35.5% {content: "preservati";} 
+            36.5% {content: "preservat";} 
+            36.5% {content: "preserva";} 
+            37.5% {content: "preserv";} 
+            38.5% {content: "preser";} 
+            39.5% {content: "prese";} 
+            40.5% {content: "pres";} 
+            41.5% {content: "pre";} 
+            42.5% {content: "pr";} 
+            43.5% {content: "p";} 
+            43.5% {content: "";}  
+            46% {content: "c";}  
+            48.5% {content: "co";}  
+            51% {content: "com";}  
+            53.5% {content: "comm";}  
+            56% {content: "commu";}  
+            58.5% {content: "commun";}  
+            61% {content: "communi";}  
+            63.5% {content: "communit";}  
+            66% {content: "community";}  
+            68.5% {content: "community.";}  
+            69.5% {content: "community";}  
+            70.5% {content: "communit";}  
+            71.5% {content: "communi";}  
+            71.5% {content: "commun";}  
+            72.5% {content: "commu";}  
+            73.5% {content: "comm";}  
+            74.5% {content: "com";}  
+            75.7% {content: "co";}  
+            76.5% {content: "c";}  
+            76.5% {content: "";}  
+            79% {content: "e";} 
+            81.5% {content: "ev";} 
+            84% {content: "eve";} 
+            86.5% {content: "ever";} 
+            89% {content: "every";} 
+            91.5% {content: "everyb";} 
+            94% {content: "everybo";} 
+            96.5% {content: "everybod";} 
+            99% {content: "everybody";} 
+            100% {content: "everybody.";} 
+            100% {content: "everybody.";} 
+            }
+            @keyframes cursor {
+            0% {content: "";}
+            50% {content: "|";}
+            100% {content: "";}
+            }
+        
+
 .words::before {
 animation: words 1s linear 0s 1 normal forwards;
 content: "";
