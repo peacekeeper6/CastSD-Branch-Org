@@ -1,5 +1,6 @@
 # Project ELIMIN8
 ## https://projectelimin8.com/ 
+https://peacekeeper6.github.io/ELIMIN8/
 
 ### Project ELIMIN8 was started with one goal in mind: to reduce waste and starvation. We are an ever-growing non-profit branch organization under CastSD that strives to make a change in our communities. We are mainly located in San Diego, California but have expanded to other areas across America and are looking to expand throughout the world as well. Members of Project ELIMIN8 pick up surplus food and donate it to organizations weekly. 
 
